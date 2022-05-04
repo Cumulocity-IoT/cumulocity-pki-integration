@@ -16,7 +16,12 @@
         1. on non embedded devices
         2. on embedded devices
         3. on containerized enironments
-    3. 
+    3. What is a CA rollover
+    4. where is the Protocol Gateway for EST running?
+    5. It seams a TOMCAT is involved in the Architecture. 
+        1. Who is responsible maintaining the TOMCAT?
+        2. Do our customers have to configure a TOMCAT?
+        3. e.g. https://doc.nexusgroup.com/display/PUB/EST+URI+configuration
 
 
 ### New Certificates can be 
@@ -79,8 +84,9 @@
         1. How will this be done for devices within a DMZ
         2. How will this be done for offline devices
         3. Which port is used for the status check of an device which possibly needs 2 be forwarded
+            https://doc.nexusgroup.com/display/PUB/Default+ports+in+Certificate+Manager
         4. can OCSP be used of the device
-        5. use SCVP 
+        5. can SCVP to get the status of a Device
     3. No
 
 #### Online Certificate Status Protocol (OCSP)
@@ -93,4 +99,4 @@
     2. It needs to be clarified if Nexus supports this
     3. 
 
-    
+    trusted platform
