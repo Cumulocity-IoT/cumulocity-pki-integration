@@ -11,7 +11,7 @@
     1. Where to store the certificate on the device
         1. on non embedded devices
         2. on embedded devices
-        3. on containerized enironments
+        3. on containerized environments
     2. How to store the certificates in a secure manner 
         1. on non embedded devices
         2. on embedded devices
@@ -23,6 +23,7 @@
         2. Do our customers have to configure a TOMCAT?
         3. e.g. https://doc.nexusgroup.com/display/PUB/EST+URI+configuration
     6. Do you have an overview list which use cases nexus supports?
+    7. Do you have an view how often Reinstate is used? Do we need this?
     
 
 
@@ -99,6 +100,10 @@
 #### Server-based Certificate Validation Protocol (SCVP) https://www.rfc-editor.org/info/rfc5055
     1. The Server-based Certificate Validation Protocol (SCVP) is an Internet protocol for determining the path between an X.509 digital certificate and a trusted root (Delegated Path Discovery) and the validation of that path (Delegated Path Validation) according to a particular validation policy. 
     2. It needs to be clarified if Nexus supports this
+        1. No
     3. 
-
+### Enrollment over Secure Transport
+    1. EST only works via HTTPS
+        1. https://en.wikipedia.org/wiki/Enrollment_over_Secure_Transport
+    2.
     trusted platform
