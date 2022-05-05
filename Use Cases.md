@@ -22,6 +22,8 @@
         1. Who is responsible maintaining the TOMCAT?
         2. Do our customers have to configure a TOMCAT?
         3. e.g. https://doc.nexusgroup.com/display/PUB/EST+URI+configuration
+    6. Do you have an overview list which use cases nexus supports?
+    
 
 
 ### New Certificates can be 
