@@ -100,10 +100,9 @@
 #### Server-based Certificate Validation Protocol (SCVP) https://www.rfc-editor.org/info/rfc5055
     1. The Server-based Certificate Validation Protocol (SCVP) is an Internet protocol for determining the path between an X.509 digital certificate and a trusted root (Delegated Path Discovery) and the validation of that path (Delegated Path Validation) according to a particular validation policy. 
     2. It needs to be clarified if Nexus supports this
-        1. No
+        1. No it's not supported
     3. 
 ### Enrollment over Secure Transport
     1. EST only works via HTTPS
         1. https://en.wikipedia.org/wiki/Enrollment_over_Secure_Transport
     2.
-    trusted platform
