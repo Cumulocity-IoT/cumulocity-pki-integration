@@ -24,6 +24,7 @@
         3. e.g. https://doc.nexusgroup.com/display/PUB/EST+URI+configuration
     6. Do you have an overview list which use cases nexus supports?
     7. Do you have an view how often Reinstate is used? Do we need this?
+    8. Shall the microservice somehow be involved using the existing Identity API?
     
 
 
@@ -63,8 +64,9 @@
     2. A C8y user should be used to renewal a certificate from Sub Tenant (User restrictions needed, maybe approval process as well)
     3. A C8y user should be used to renewal a certificate from Advanced Tenant
     4. A C8y user should be used to renewal a certificate from Management Tenant
-    5. Should a certificate be renewal from a device?
-    6. Should a certificate be renewal from Nexus?
+    5. Should a certificate be renewaled from a device?
+    6. Should a certificate be renewaled from Nexus?
+    7. 
 
 ### Revoke of certificate
     1. A C8y user should be used to revoke a certificate from Sub Tenant
@@ -106,3 +108,11 @@
     1. EST only works via HTTPS
         1. https://en.wikipedia.org/wiki/Enrollment_over_Secure_Transport
     2.
+
+### Identity API
+    1. Shall the microservice somehow be involved using the existing Identity API?
+
+
+### Use Case based on  Device Certificates
+    1. Device Onboarding
+    2. Software Package based enrollment
