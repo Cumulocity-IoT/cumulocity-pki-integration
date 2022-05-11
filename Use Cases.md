@@ -107,7 +107,8 @@
 ### Enrollment over Secure Transport
     1. EST only works via HTTPS
         1. https://en.wikipedia.org/wiki/Enrollment_over_Secure_Transport
-    2.
+    2. EST over  COAP would be not priority one an even not necessary
+    3. 
 
 ### Identity API
     1. Shall the microservice somehow be involved using the existing Identity API?
