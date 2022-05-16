@@ -6,9 +6,9 @@
     Description: This UC is already existing but we need to find a way to connect devices with PKI certificates
 ### UC 2: [Basic authentification replaced by certificates](#replace-basic-authentication)
     Description: This UC replaces the existing registered way of devices to connect devices. Possible way to move a device to a different tenant.
-### UC 3: [Certificate create](#New-Certificates)
+### UC 3: [Certificate create](#new-certificates)
     Description: This UC is to manually and possibly automatically create a certificate of a device
-### UC 4: [Certificate Renewal](#Renewal-of-certificates)
+### UC 4: [Certificate Renewal](#renewal-of-certificate)
     Description: This UC is to manually and possibly automatically renewal a certificate of a device
 ### UC 5: [Certificate Revokation](#revoke-of-certificate)
     Description: This UC is to manually and possibly automatically revokation of a certificate
