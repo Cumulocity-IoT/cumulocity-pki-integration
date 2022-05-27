@@ -7,7 +7,7 @@
 	<groupId>com.cumulocity</groupId>
 	<artifactId>pki-integration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pkiintegration</name>
+	<name>pki-integration</name>
 	<description>Microservice for pki-integration</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
