@@ -1,0 +1,29 @@
+<div class="modal-dialog">
+  <div class="modal-content" uib-modal-transclude="">
+    <div class="modal-header text-center bg-primary">
+      <div style="font-size: 45px">
+        <span class="c8y-icon c8y-icon-white c8y-icon-bookmark"></span>
+      </div>
+      <h4 class="text-uppercase" style="margin: 0; letter-spacing: 0.15em; color: white">Add Certificate</h4>
+    </div>
+    <hr style="margin: 0" />
+    <div class="modal-body">
+      <form action="#">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Certificate Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputFile">Public Key Upload</label>
+          <input type="file" id="exampleInputFile" aria-describedby="helpinput" class="form-control" />
+          <p id="helpinput" class="help-block">Please check File-Type before upload</p>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary" (click)="bsModalRef.hide()">Creat Certificate</button>
+      <button class="btn btn-default" translate="" (click)="bsModalRef.hide()">Cancel</button>
+    </div>
+  </div>
+</div>
