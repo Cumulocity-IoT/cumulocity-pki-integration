@@ -2,10 +2,9 @@ package com.cumulocity.pkiintegration.service;
 
 import java.net.URISyntaxException;
 
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
-import org.springframework.web.client.RestTemplate;
 
 import lombok.RequiredArgsConstructor;
 
@@ -13,12 +12,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CertificateManagementService {
 
-	private final RestTemplate restTemplate;
+	private final HttpRestRequestService request;
 
 	public Object getRegistrations() throws RestClientException, URISyntaxException {
-		String url = "https://pgw.38.qa.go.nexusgroup.com/api/registrations/t4793186911343297060/est";
-		ResponseEntity<Object> response = restTemplate.getForEntity(url, Object.class);
-
-		return response.getBody();
+		String endpoint = "/registrations/t4793186911343297060/est";
+		Object response = request.sendRequest(HttpMethod.GET, endpoint, Object.class);
+		return response;
 	}
 }
