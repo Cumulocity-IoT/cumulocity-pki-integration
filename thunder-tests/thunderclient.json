@@ -1427,20 +1427,38 @@
     "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
     "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
     "name": "Retrieve all managed objects",
-    "url": "{{baseUrl}}/inventory/managedObjects",
+    "url": "{{baseUrl}}/inventory/managedObjects?pageSize=100&type=c8y_Serial",
     "method": "GET",
     "sortNum": 700000,
     "created": "2022-06-02T05:29:43.168Z",
-    "modified": "2022-06-02T05:29:43.168Z",
+    "modified": "2022-06-02T12:29:38.172Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "c8y_IsDevice",
+        "value": "",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "pageSize",
+        "value": "100",
+        "isPath": false
+      },
+      {
+        "name": "type",
+        "value": "c8y_Serial ",
+        "isPath": false
+      }
+    ],
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
         "password": "{{password}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "dddfe503-dd1f-4be3-a539-5b5f7bc4856c",
@@ -1467,20 +1485,27 @@
     "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
     "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
     "name": "Retrieve a specific managed object",
-    "url": "{{baseUrl}}/inventory/managedObjects/{id}",
+    "url": "{{baseUrl2}}/inventory/managedObjects/{id}",
     "method": "GET",
     "sortNum": 720000,
     "created": "2022-06-02T05:29:43.170Z",
-    "modified": "2022-06-02T05:29:43.170Z",
+    "modified": "2022-06-02T11:28:21.361Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "159506125",
+        "isPath": true
+      }
+    ],
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
-        "password": "{{password}}"
+        "password": "{{password_ps}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "9b3b3571-ced8-4461-b2ab-4a56b54f803f",
@@ -1927,11 +1952,11 @@
     "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
     "containerId": "e4cf5f51-b73f-48a7-92fa-86ddd0409f16",
     "name": "Retrieve URIs to collections of external IDs",
-    "url": "{{baseUrl}}/identity",
+    "url": "{{baseUrl}}/dentity/externalIds/c8y_serial/",
     "method": "GET",
     "sortNum": 950000,
     "created": "2022-06-02T05:29:43.193Z",
-    "modified": "2022-06-02T05:29:43.193Z",
+    "modified": "2022-06-02T12:34:21.338Z",
     "headers": [],
     "params": [],
     "auth": {
@@ -1940,7 +1965,8 @@
         "username": "{{username}}",
         "password": "{{password}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "2748e0a0-9d9a-4dfa-9298-f91049c1a005",
@@ -1967,20 +1993,27 @@
     "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
     "containerId": "2a268d77-8e54-4a15-bad4-f553906c015f",
     "name": "Retrieve all external IDs of a specific managed object",
-    "url": "{{baseUrl}}/identity/globalIds/{id}/externalIds",
+    "url": "{{baseUrl2}}/identity/globalIds/{id}/externalIds",
     "method": "GET",
     "sortNum": 970000,
     "created": "2022-06-02T05:29:43.195Z",
-    "modified": "2022-06-02T05:29:43.195Z",
+    "modified": "2022-06-02T12:47:17.011Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "159506125",
+        "isPath": true
+      }
+    ],
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
-        "password": "{{password}}"
+        "password": "{{password_ps}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "8edc08fa-8f67-488f-8e5c-cee06ea4cd94",
@@ -1991,16 +2024,28 @@
     "method": "GET",
     "sortNum": 980000,
     "created": "2022-06-02T05:29:43.196Z",
-    "modified": "2022-06-02T05:29:43.196Z",
+    "modified": "2022-06-02T12:28:23.087Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "type",
+        "value": "",
+        "isPath": true
+      },
+      {
+        "name": "externalId",
+        "value": "",
+        "isPath": true
+      }
+    ],
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
         "password": "{{password}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "512cb50b-3e6c-46f0-8498-4ac7d80f0dc4",
@@ -3727,36 +3772,54 @@
     "method": "POST",
     "sortNum": 1760000,
     "created": "2022-06-02T05:32:41.768Z",
-    "modified": "2022-06-02T05:32:41.768Z",
+    "modified": "2022-06-02T12:55:58.086Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n\"category\": \"configuration\",\r\n\"key\": \"temp_too_high\",\r\n\"value\": \"CRITICAL|temperature too high\",\r\n\"test\": \"new\"\r\n}",
+      "form": []
+    },
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
         "password": "{{password}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "1230b18d-6cc4-4d96-becd-23cb45243b22",
     "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
     "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
     "name": "Retrieve all options",
-    "url": "{{baseUrl}}/tenant/options",
+    "url": "{{baseUrl}}/tenant/options?pageSize=10&currentPage=1",
     "method": "GET",
     "sortNum": 1770000,
     "created": "2022-06-02T05:32:41.769Z",
-    "modified": "2022-06-02T05:32:41.768Z",
+    "modified": "2022-06-02T06:24:09.138Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "pageSize",
+        "value": "10",
+        "isPath": false
+      },
+      {
+        "name": "currentPage",
+        "value": "1",
+        "isPath": false
+      }
+    ],
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
         "password": "{{password}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "68d80db6-948d-48f2-8f19-66a36fac0d43",
@@ -3912,5 +3975,26 @@
         "password": "{{password}}"
       }
     }
+  },
+  {
+    "_id": "1aaab0fa-f650-470c-800c-86684db78a0e",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "get external id of specific MO",
+    "url": "{{baseUrl2}}/identity/globalIds/159506125/externalIds",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-02T12:38:11.416Z",
+    "modified": "2022-06-02T12:41:22.849Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password_ps}}"
+      }
+    },
+    "tests": []
   }
 ]
