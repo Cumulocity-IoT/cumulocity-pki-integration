@@ -1,0 +1,417 @@
+[
+  {
+    "_id": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "colName": "PKI",
+    "created": "2022-06-02T05:26:48.496Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+        "name": "Options",
+        "containerId": "",
+        "created": "2022-06-02T05:32:41.768Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "bd44b1de-5542-4f74-8e27-a2f9b23f7bbe",
+        "name": "Login options",
+        "containerId": "",
+        "created": "2022-06-02T05:35:55.662Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "62364034-b247-48d2-97ea-2b5a9d5f88ca",
+        "name": "System options",
+        "containerId": "",
+        "created": "2022-06-02T05:35:59.441Z",
+        "sortNum": 30000
+      }
+    ]
+  },
+  {
+    "_id": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "colName": "Cumulocity IoT",
+    "created": "2022-06-02T05:29:43.089Z",
+    "sortNum": 20000,
+    "folders": [
+      {
+        "_id": "d10a8ef7-1ccc-4da3-8429-ad00b0dbf7bb",
+        "name": "Alarm API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.094Z",
+        "sortNum": 1
+      },
+      {
+        "_id": "593fa72b-c935-443e-9238-787cfbf5d4ba",
+        "name": "Alarm notification API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.095Z",
+        "sortNum": 2
+      },
+      {
+        "_id": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+        "name": "Alarms",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.096Z",
+        "sortNum": 3
+      },
+      {
+        "_id": "2b46aed4-baa4-4434-b1f5-f6fb168f351d",
+        "name": "Device control API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.097Z",
+        "sortNum": 4
+      },
+      {
+        "_id": "ec157916-b0b2-4c0d-8e77-94e5649c1b2a",
+        "name": "Device control notification API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.098Z",
+        "sortNum": 5
+      },
+      {
+        "_id": "6190b6b1-15b5-4306-ae0a-aea331b1a80d",
+        "name": "Operations",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.099Z",
+        "sortNum": 6
+      },
+      {
+        "_id": "54c20573-f2d2-46eb-b193-3c0c8e3128f4",
+        "name": "Bulk operations",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.100Z",
+        "sortNum": 7
+      },
+      {
+        "_id": "2f7ee3c4-9df9-457b-a142-83bc274f54a7",
+        "name": "Device credentials",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.101Z",
+        "sortNum": 8
+      },
+      {
+        "_id": "c57791b4-3ccb-426f-8977-4a4e9af61971",
+        "name": "New device requests",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.102Z",
+        "sortNum": 9
+      },
+      {
+        "_id": "c4b90e95-c286-4230-908a-9cf1507eecba",
+        "name": "Device control via SMS",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.104Z",
+        "sortNum": 10
+      },
+      {
+        "_id": "46a3d464-7171-46de-9fcc-4c0e269cf88c",
+        "name": "Audit API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.105Z",
+        "sortNum": 11
+      },
+      {
+        "_id": "e831fc20-a43e-4e67-94df-ddbf34a7f87c",
+        "name": "Audits",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.106Z",
+        "sortNum": 12
+      },
+      {
+        "_id": "41eed7eb-308c-4fb9-912c-19f1316483e7",
+        "name": "Event API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.107Z",
+        "sortNum": 13
+      },
+      {
+        "_id": "5d280361-6089-4158-bca2-af3a06fe20fd",
+        "name": "Event notification API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.108Z",
+        "sortNum": 14
+      },
+      {
+        "_id": "813dd258-eb84-46f7-8269-4fd671050b6f",
+        "name": "Events",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.109Z",
+        "sortNum": 15
+      },
+      {
+        "_id": "103f3469-dedf-45ad-86c1-3a8179b67040",
+        "name": "Attachments",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.110Z",
+        "sortNum": 16
+      },
+      {
+        "_id": "c0d4d9e3-64c0-4eab-8211-e56b48588086",
+        "name": "Application API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.111Z",
+        "sortNum": 17
+      },
+      {
+        "_id": "300f1089-dbb5-4b25-aae3-0156151fe5e8",
+        "name": "Current application",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.112Z",
+        "sortNum": 18
+      },
+      {
+        "_id": "00ce959e-7881-49aa-b793-551bae8b38dc",
+        "name": "Applications",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.113Z",
+        "sortNum": 19
+      },
+      {
+        "_id": "ef7ac850-5070-40d0-b38f-2ad7c1b16312",
+        "name": "Application binaries",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.114Z",
+        "sortNum": 20
+      },
+      {
+        "_id": "24b42569-0a33-4a5b-b096-4affc819df8e",
+        "name": "Bootstrap user",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.115Z",
+        "sortNum": 21
+      },
+      {
+        "_id": "179aafd8-d713-4239-a55a-59f14a372e82",
+        "name": "Inventory API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.116Z",
+        "sortNum": 22
+      },
+      {
+        "_id": "85278a1e-2a5d-4f33-a693-d90c663d619e",
+        "name": "Inventory notification API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.117Z",
+        "sortNum": 23
+      },
+      {
+        "_id": "eb085498-8ba3-42ef-b696-3394b5420898",
+        "name": "Managed objects",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.118Z",
+        "sortNum": 24
+      },
+      {
+        "_id": "abf5d855-d9a7-468b-8dab-6370a3e3d3f2",
+        "name": "Binaries",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.119Z",
+        "sortNum": 25
+      },
+      {
+        "_id": "8b65e953-e714-4285-95a0-886649f4ad03",
+        "name": "Child operations",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.120Z",
+        "sortNum": 26
+      },
+      {
+        "_id": "37b928cc-ab12-483d-a1e0-4c9f9ffeb163",
+        "name": "Query language",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.121Z",
+        "sortNum": 27
+      },
+      {
+        "_id": "e4cf5f51-b73f-48a7-92fa-86ddd0409f16",
+        "name": "Identity API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.122Z",
+        "sortNum": 28
+      },
+      {
+        "_id": "2a268d77-8e54-4a15-bad4-f553906c015f",
+        "name": "External IDs",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.123Z",
+        "sortNum": 29
+      },
+      {
+        "_id": "da600723-559b-4828-959c-7dcb727a5dab",
+        "name": "User API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.124Z",
+        "sortNum": 30
+      },
+      {
+        "_id": "7cab4ea3-4f27-4704-8629-9cbfc0d3521f",
+        "name": "Current User",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.125Z",
+        "sortNum": 31
+      },
+      {
+        "_id": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+        "name": "Users",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.126Z",
+        "sortNum": 32
+      },
+      {
+        "_id": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+        "name": "Groups",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.127Z",
+        "sortNum": 33
+      },
+      {
+        "_id": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+        "name": "Roles",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.128Z",
+        "sortNum": 34
+      },
+      {
+        "_id": "049029dc-0ccf-4063-9768-215a4aff49ba",
+        "name": "Inventory Roles",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.129Z",
+        "sortNum": 35
+      },
+      {
+        "_id": "caa8b744-b9bf-4046-8c4c-4185fd15e61c",
+        "name": "Device Permissions",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.130Z",
+        "sortNum": 36
+      },
+      {
+        "_id": "14fc0acc-5e73-4fea-ba5f-b65215e03ea3",
+        "name": "Measurement API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.131Z",
+        "sortNum": 37
+      },
+      {
+        "_id": "23a52138-a24b-4bfb-b13a-2304a970df3d",
+        "name": "Measurement notification API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.132Z",
+        "sortNum": 38
+      },
+      {
+        "_id": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+        "name": "Measurements",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.133Z",
+        "sortNum": 39
+      },
+      {
+        "_id": "e5fb39fb-43fc-4a22-8103-bca486dc4534",
+        "name": "Measurements specifics",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.134Z",
+        "sortNum": 40
+      },
+      {
+        "_id": "52497ecd-40f2-4197-bc31-e058645395a6",
+        "name": "Real-time notification API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.135Z",
+        "sortNum": 41
+      },
+      {
+        "_id": "0f668cf2-6b4d-49f4-9251-82d0f1095a43",
+        "name": "Notification 2.0 API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.136Z",
+        "sortNum": 42
+      },
+      {
+        "_id": "85014019-8a94-46d5-9c48-4f79a23c2025",
+        "name": "Tokens",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.137Z",
+        "sortNum": 43
+      },
+      {
+        "_id": "6619592e-4375-4043-a8ac-2dc3ae5cb952",
+        "name": "Subscriptions",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.138Z",
+        "sortNum": 44
+      },
+      {
+        "_id": "d36c20d0-90ef-426b-8c6b-ad2b32b90869",
+        "name": "Retention rules",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.139Z",
+        "sortNum": 45
+      },
+      {
+        "_id": "203e5603-ffff-4ce4-accc-a6de0c2c3178",
+        "name": "Tenant API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.140Z",
+        "sortNum": 46
+      },
+      {
+        "_id": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+        "name": "Tenants",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.141Z",
+        "sortNum": 47
+      },
+      {
+        "_id": "837aa92c-1b1e-42df-8869-efaab921f0ed",
+        "name": "Tenant applications",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.142Z",
+        "sortNum": 48
+      },
+      {
+        "_id": "40e45d75-4495-42f3-872c-22778826f975",
+        "name": "Device statistics",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.143Z",
+        "sortNum": 49
+      },
+      {
+        "_id": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+        "name": "Usage statistics",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.144Z",
+        "sortNum": 50
+      },
+      {
+        "_id": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+        "name": "Options",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.145Z",
+        "sortNum": 51
+      },
+      {
+        "_id": "1a4ea189-1616-4ed8-a38d-d367fb3e7294",
+        "name": "Login options",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.146Z",
+        "sortNum": 52
+      },
+      {
+        "_id": "3b5ecb08-4381-40fc-818d-4aa740254e01",
+        "name": "System options",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.147Z",
+        "sortNum": 53
+      },
+      {
+        "_id": "936061fd-e887-407b-8c8c-a199ae69f14e",
+        "name": "Platform API",
+        "containerId": "",
+        "created": "2022-06-02T05:29:43.148Z",
+        "sortNum": 54
+      }
+    ]
+  }
+]

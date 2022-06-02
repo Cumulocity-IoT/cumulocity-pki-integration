@@ -1,0 +1,3916 @@
+[
+  {
+    "_id": "cd47ef6e-25eb-4da9-86ef-979b14cd1b80",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "936061fd-e887-407b-8c8c-a199ae69f14e",
+    "name": "Retrieve URIs to collection platform objects",
+    "url": "{{baseUrl}}/platform",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-02T05:29:43.098Z",
+    "modified": "2022-06-02T05:29:43.098Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1de239ce-1d2b-4c01-99de-a637aa37ebd4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "d10a8ef7-1ccc-4da3-8429-ad00b0dbf7bb",
+    "name": "Retrieve URIs to collections of alarms",
+    "url": "{{baseUrl}}/alarm",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-06-02T05:29:43.099Z",
+    "modified": "2022-06-02T05:29:43.099Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ef841aac-16ae-4ed5-9974-43fe6c1b3b13",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Create an alarm",
+    "url": "{{baseUrl}}/alarm/alarms",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-06-02T05:29:43.100Z",
+    "modified": "2022-06-02T05:29:43.100Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0c3341db-b374-446a-8799-423ee8a87054",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Retrieve all alarms",
+    "url": "{{baseUrl}}/alarm/alarms",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-06-02T05:29:43.101Z",
+    "modified": "2022-06-02T05:29:43.101Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c4ac780a-2df8-4df3-aa15-65a2d97103ec",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Update alarm collections",
+    "url": "{{baseUrl}}/alarm/alarms",
+    "method": "PUT",
+    "sortNum": 50000,
+    "created": "2022-06-02T05:29:43.102Z",
+    "modified": "2022-06-02T05:29:43.102Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b2f1c112-c450-4510-ad05-fb78ed1d9b06",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Remove alarm collections",
+    "url": "{{baseUrl}}/alarm/alarms",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2022-06-02T05:29:43.103Z",
+    "modified": "2022-06-02T05:29:43.103Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "18bcf941-0970-4446-be98-2678e3759b32",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Retrieve a specific alarm",
+    "url": "{{baseUrl}}/alarm/alarms/{id}",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2022-06-02T05:29:43.104Z",
+    "modified": "2022-06-02T05:29:43.104Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "cae9bfc6-d962-4a39-9784-928e1b66ff7f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Update a specific alarm",
+    "url": "{{baseUrl}}/alarm/alarms/{id}",
+    "method": "PUT",
+    "sortNum": 80000,
+    "created": "2022-06-02T05:29:43.105Z",
+    "modified": "2022-06-02T05:29:43.105Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "bf54f774-1df6-4bfb-b37a-9b919d676c18",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b368a005-f452-4158-9bae-4a4ce6d47d8f",
+    "name": "Retrieve the total number of alarms",
+    "url": "{{baseUrl}}/alarm/alarms/count",
+    "method": "GET",
+    "sortNum": 90000,
+    "created": "2022-06-02T05:29:43.106Z",
+    "modified": "2022-06-02T05:29:43.106Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1400c870-1dad-4155-8b98-9a8cc81918bc",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2b46aed4-baa4-4434-b1f5-f6fb168f351d",
+    "name": "Retrieve URIs to collections of operations",
+    "url": "{{baseUrl}}/devicecontrol",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2022-06-02T05:29:43.107Z",
+    "modified": "2022-06-02T05:29:43.107Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8c65bbbd-fc0c-48da-995b-7d32354fb9cf",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6190b6b1-15b5-4306-ae0a-aea331b1a80d",
+    "name": "Create an operation",
+    "url": "{{baseUrl}}/devicecontrol/operations",
+    "method": "POST",
+    "sortNum": 110000,
+    "created": "2022-06-02T05:29:43.108Z",
+    "modified": "2022-06-02T05:29:43.108Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0e7a3b94-3469-46c2-bc7e-fe275799f1d8",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6190b6b1-15b5-4306-ae0a-aea331b1a80d",
+    "name": "Retrieve a list of operations",
+    "url": "{{baseUrl}}/devicecontrol/operations",
+    "method": "GET",
+    "sortNum": 120000,
+    "created": "2022-06-02T05:29:43.109Z",
+    "modified": "2022-06-02T05:29:43.109Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "eca1a883-3508-471b-90fa-19c3a996353a",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6190b6b1-15b5-4306-ae0a-aea331b1a80d",
+    "name": "Delete a list of operations",
+    "url": "{{baseUrl}}/devicecontrol/operations",
+    "method": "DELETE",
+    "sortNum": 130000,
+    "created": "2022-06-02T05:29:43.110Z",
+    "modified": "2022-06-02T05:29:43.110Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "9525d34d-dd20-4897-beac-2697bd53b0fd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6190b6b1-15b5-4306-ae0a-aea331b1a80d",
+    "name": "Retrieve a specific operation",
+    "url": "{{baseUrl}}/devicecontrol/operations/{id}",
+    "method": "GET",
+    "sortNum": 140000,
+    "created": "2022-06-02T05:29:43.111Z",
+    "modified": "2022-06-02T05:29:43.111Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "3040bfd8-7b5f-4969-93a2-fa34e1b4fe04",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6190b6b1-15b5-4306-ae0a-aea331b1a80d",
+    "name": "Update a specific operation status",
+    "url": "{{baseUrl}}/devicecontrol/operations/{id}",
+    "method": "PUT",
+    "sortNum": 150000,
+    "created": "2022-06-02T05:29:43.112Z",
+    "modified": "2022-06-02T05:29:43.112Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "66416e56-bb84-41b9-800a-7a30b98853fc",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c57791b4-3ccb-426f-8977-4a4e9af61971",
+    "name": "Create a new device request",
+    "url": "{{baseUrl}}/devicecontrol/newDeviceRequests",
+    "method": "POST",
+    "sortNum": 160000,
+    "created": "2022-06-02T05:29:43.113Z",
+    "modified": "2022-06-02T05:29:43.113Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8bbf852e-7af6-43f0-b42d-c08dbc20360c",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c57791b4-3ccb-426f-8977-4a4e9af61971",
+    "name": "Retrieve a list of new device requests",
+    "url": "{{baseUrl}}/devicecontrol/newDeviceRequests",
+    "method": "GET",
+    "sortNum": 170000,
+    "created": "2022-06-02T05:29:43.114Z",
+    "modified": "2022-06-02T05:29:43.114Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "35e77151-5803-4451-a4ee-d66a5e3b2832",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c57791b4-3ccb-426f-8977-4a4e9af61971",
+    "name": "Retrieve a specific new device request",
+    "url": "{{baseUrl}}/devicecontrol/newDeviceRequests/{requestId}",
+    "method": "GET",
+    "sortNum": 180000,
+    "created": "2022-06-02T05:29:43.115Z",
+    "modified": "2022-06-02T05:29:43.115Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8456795d-f6dd-4318-bac8-053e66f0d1a2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c57791b4-3ccb-426f-8977-4a4e9af61971",
+    "name": "Update a specific new device request status",
+    "url": "{{baseUrl}}/devicecontrol/newDeviceRequests/{requestId}",
+    "method": "PUT",
+    "sortNum": 190000,
+    "created": "2022-06-02T05:29:43.116Z",
+    "modified": "2022-06-02T05:29:43.116Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "529f0534-748a-43f3-9b08-06375ce8983c",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c57791b4-3ccb-426f-8977-4a4e9af61971",
+    "name": "Delete a specific new device request",
+    "url": "{{baseUrl}}/devicecontrol/newDeviceRequests/{requestId}",
+    "method": "DELETE",
+    "sortNum": 200000,
+    "created": "2022-06-02T05:29:43.117Z",
+    "modified": "2022-06-02T05:29:43.117Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7915152f-7afe-442d-874b-67c1e84b4c06",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2f7ee3c4-9df9-457b-a142-83bc274f54a7",
+    "name": "Create device credentials",
+    "url": "{{baseUrl}}/devicecontrol/deviceCredentials",
+    "method": "POST",
+    "sortNum": 210000,
+    "created": "2022-06-02T05:29:43.118Z",
+    "modified": "2022-06-02T05:29:43.118Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0e894a07-81b6-4be9-9b14-ec31796746aa",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2f7ee3c4-9df9-457b-a142-83bc274f54a7",
+    "name": "Create a bulk device credentials request",
+    "url": "{{baseUrl}}/devicecontrol/bulkNewDeviceRequests",
+    "method": "POST",
+    "sortNum": 220000,
+    "created": "2022-06-02T05:29:43.119Z",
+    "modified": "2022-06-02T05:29:43.119Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "form": [
+        {
+          "name": "file",
+          "value": "thunder"
+        }
+      ]
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8be13870-8c60-4d88-9672-0b631a5700f1",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "54c20573-f2d2-46eb-b193-3c0c8e3128f4",
+    "name": "Create a bulk operation",
+    "url": "{{baseUrl}}/devicecontrol/bulkoperations",
+    "method": "POST",
+    "sortNum": 230000,
+    "created": "2022-06-02T05:29:43.120Z",
+    "modified": "2022-06-02T05:29:43.120Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4f67780a-6819-42b9-92fa-e000897dbfbd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "54c20573-f2d2-46eb-b193-3c0c8e3128f4",
+    "name": "Retrieve a list of bulk operations",
+    "url": "{{baseUrl}}/devicecontrol/bulkoperations",
+    "method": "GET",
+    "sortNum": 240000,
+    "created": "2022-06-02T05:29:43.121Z",
+    "modified": "2022-06-02T05:29:43.121Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0ba0d2af-068c-4d26-81ac-363a36cd6af2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "54c20573-f2d2-46eb-b193-3c0c8e3128f4",
+    "name": "Retrieve a specific bulk operation",
+    "url": "{{baseUrl}}/devicecontrol/bulkoperations/{id}",
+    "method": "GET",
+    "sortNum": 250000,
+    "created": "2022-06-02T05:29:43.122Z",
+    "modified": "2022-06-02T05:29:43.122Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "368c6106-fa44-4ef1-a895-36a65083cce4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "54c20573-f2d2-46eb-b193-3c0c8e3128f4",
+    "name": "Update a specific bulk operation",
+    "url": "{{baseUrl}}/devicecontrol/bulkoperations/{id}",
+    "method": "PUT",
+    "sortNum": 260000,
+    "created": "2022-06-02T05:29:43.123Z",
+    "modified": "2022-06-02T05:29:43.123Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4b1117f4-48cc-468f-a081-891e3892a349",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "54c20573-f2d2-46eb-b193-3c0c8e3128f4",
+    "name": "Delete a specific bulk operation",
+    "url": "{{baseUrl}}/devicecontrol/bulkoperations/{id}",
+    "method": "DELETE",
+    "sortNum": 270000,
+    "created": "2022-06-02T05:29:43.124Z",
+    "modified": "2022-06-02T05:29:43.124Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "3332cfc8-32b1-4443-9a1c-5ae1674a3904",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c0d4d9e3-64c0-4eab-8211-e56b48588086",
+    "name": "Retrieve URIs to collections of applications",
+    "url": "{{baseUrl}}/application",
+    "method": "GET",
+    "sortNum": 280000,
+    "created": "2022-06-02T05:29:43.125Z",
+    "modified": "2022-06-02T05:29:43.125Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4dd7cdd7-3a1d-4887-9e15-3a56c3b2212f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "00ce959e-7881-49aa-b793-551bae8b38dc",
+    "name": "Create an application",
+    "url": "{{baseUrl}}/application/applications",
+    "method": "POST",
+    "sortNum": 290000,
+    "created": "2022-06-02T05:29:43.126Z",
+    "modified": "2022-06-02T05:29:43.126Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "26d07b2f-0d58-444f-be50-55e5d0ebfa16",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "00ce959e-7881-49aa-b793-551bae8b38dc",
+    "name": "Retrieve all applications",
+    "url": "{{baseUrl}}/application/applications",
+    "method": "GET",
+    "sortNum": 300000,
+    "created": "2022-06-02T05:29:43.127Z",
+    "modified": "2022-06-02T05:29:43.127Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "501c8339-e8d2-4905-a5fa-451ab6ad4439",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "00ce959e-7881-49aa-b793-551bae8b38dc",
+    "name": "Retrieve a specific application",
+    "url": "{{baseUrl}}/application/applications/{id}",
+    "method": "GET",
+    "sortNum": 310000,
+    "created": "2022-06-02T05:29:43.128Z",
+    "modified": "2022-06-02T05:29:43.128Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "283276bc-c5f9-4ee1-b741-3e7d85a366d2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "00ce959e-7881-49aa-b793-551bae8b38dc",
+    "name": "Update a specific application",
+    "url": "{{baseUrl}}/application/applications/{id}",
+    "method": "PUT",
+    "sortNum": 320000,
+    "created": "2022-06-02T05:29:43.129Z",
+    "modified": "2022-06-02T05:29:43.129Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0349ce92-95c4-4c59-a30d-b7c8abc39d1a",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "00ce959e-7881-49aa-b793-551bae8b38dc",
+    "name": "Delete an application",
+    "url": "{{baseUrl}}/application/applications/{id}",
+    "method": "DELETE",
+    "sortNum": 330000,
+    "created": "2022-06-02T05:29:43.130Z",
+    "modified": "2022-06-02T05:29:43.130Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e745ad6d-35dc-4e90-abec-27ee1fea1018",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "ef7ac850-5070-40d0-b38f-2ad7c1b16312",
+    "name": "Upload an application attachment",
+    "url": "{{baseUrl}}/application/applications/{id}/binaries",
+    "method": "POST",
+    "sortNum": 340000,
+    "created": "2022-06-02T05:29:43.131Z",
+    "modified": "2022-06-02T05:29:43.131Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "form": [
+        {
+          "name": "file",
+          "value": "thunder"
+        }
+      ]
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "a4541565-1022-4ac4-8696-95a7aed9cba2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "ef7ac850-5070-40d0-b38f-2ad7c1b16312",
+    "name": "Retrieve all application attachments",
+    "url": "{{baseUrl}}/application/applications/{id}/binaries",
+    "method": "GET",
+    "sortNum": 350000,
+    "created": "2022-06-02T05:29:43.132Z",
+    "modified": "2022-06-02T05:29:43.132Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c62c72fd-28f2-4466-a202-24419da1e110",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "ef7ac850-5070-40d0-b38f-2ad7c1b16312",
+    "name": "Retrieve a specific application attachment",
+    "url": "{{baseUrl}}/application/applications/{id}/binaries/{binaryId}",
+    "method": "GET",
+    "sortNum": 360000,
+    "created": "2022-06-02T05:29:43.133Z",
+    "modified": "2022-06-02T05:29:43.133Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d59da6b2-8b11-4eea-b3e2-6a8192bd4ae5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "ef7ac850-5070-40d0-b38f-2ad7c1b16312",
+    "name": "Delete a specific application attachment",
+    "url": "{{baseUrl}}/application/applications/{id}/binaries/{binaryId}",
+    "method": "DELETE",
+    "sortNum": 370000,
+    "created": "2022-06-02T05:29:43.134Z",
+    "modified": "2022-06-02T05:29:43.134Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "cb2a4a62-b00d-48fc-906b-977ff1e4561d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "24b42569-0a33-4a5b-b096-4affc819df8e",
+    "name": "Retrieve the bootstrap user for a specific application",
+    "url": "{{baseUrl}}/application/applications/{id}/bootstrapUser",
+    "method": "GET",
+    "sortNum": 380000,
+    "created": "2022-06-02T05:29:43.135Z",
+    "modified": "2022-06-02T05:29:43.135Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ab30a1d7-e23b-4e92-944d-45ca185691fd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "00ce959e-7881-49aa-b793-551bae8b38dc",
+    "name": "Copy an application",
+    "url": "{{baseUrl}}/application/applications/{id}/clone",
+    "method": "POST",
+    "sortNum": 390000,
+    "created": "2022-06-02T05:29:43.136Z",
+    "modified": "2022-06-02T05:29:43.136Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "096629f1-9d51-4f25-a056-fc9a38d16fc3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c0d4d9e3-64c0-4eab-8211-e56b48588086",
+    "name": "Retrieve applications by name",
+    "url": "{{baseUrl}}/application/applicationsByName/{name}",
+    "method": "GET",
+    "sortNum": 400000,
+    "created": "2022-06-02T05:29:43.137Z",
+    "modified": "2022-06-02T05:29:43.137Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4601179f-6ca6-4a17-96cc-ff8f6b027bea",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c0d4d9e3-64c0-4eab-8211-e56b48588086",
+    "name": "Retrieve applications by tenant",
+    "url": "{{baseUrl}}/application/applicationsByTenant/{tenantId}",
+    "method": "GET",
+    "sortNum": 410000,
+    "created": "2022-06-02T05:29:43.138Z",
+    "modified": "2022-06-02T05:29:43.138Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1fea21a7-9d8e-4db5-841d-061ec16bfbfb",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c0d4d9e3-64c0-4eab-8211-e56b48588086",
+    "name": "Retrieve applications by owner",
+    "url": "{{baseUrl}}/application/applicationsByOwner/{tenantId}",
+    "method": "GET",
+    "sortNum": 420000,
+    "created": "2022-06-02T05:29:43.139Z",
+    "modified": "2022-06-02T05:29:43.139Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1558ddc0-77a6-4d8e-bdde-7d2947760592",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "c0d4d9e3-64c0-4eab-8211-e56b48588086",
+    "name": "Retrieve applications by user",
+    "url": "{{baseUrl}}/application/applicationsByUser/{username}",
+    "method": "GET",
+    "sortNum": 430000,
+    "created": "2022-06-02T05:29:43.140Z",
+    "modified": "2022-06-02T05:29:43.140Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7fe24da6-eba6-441a-8842-3c1a8530d9e5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "300f1089-dbb5-4b25-aae3-0156151fe5e8",
+    "name": "Retrieve the current application",
+    "url": "{{baseUrl}}/application/currentApplication",
+    "method": "GET",
+    "sortNum": 440000,
+    "created": "2022-06-02T05:29:43.141Z",
+    "modified": "2022-06-02T05:29:43.141Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "55b25f60-1230-4d3d-bd2c-840f15dddc4d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "300f1089-dbb5-4b25-aae3-0156151fe5e8",
+    "name": "Update the current application",
+    "url": "{{baseUrl}}/application/currentApplication",
+    "method": "PUT",
+    "sortNum": 450000,
+    "created": "2022-06-02T05:29:43.142Z",
+    "modified": "2022-06-02T05:29:43.142Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "f36a2d7b-bdd9-4f8b-a0d9-4d1c405dbb76",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "300f1089-dbb5-4b25-aae3-0156151fe5e8",
+    "name": "Retrieve the current application settings",
+    "url": "{{baseUrl}}/application/currentApplication/settings",
+    "method": "GET",
+    "sortNum": 460000,
+    "created": "2022-06-02T05:29:43.143Z",
+    "modified": "2022-06-02T05:29:43.143Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "aeb1ca82-722f-4867-b2af-1f14b06ef2a7",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "300f1089-dbb5-4b25-aae3-0156151fe5e8",
+    "name": "Retrieve the subscribed users of the current application",
+    "url": "{{baseUrl}}/application/currentApplication/subscriptions",
+    "method": "GET",
+    "sortNum": 470000,
+    "created": "2022-06-02T05:29:43.144Z",
+    "modified": "2022-06-02T05:29:43.144Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b888f568-88cb-4757-a7f4-312b5d046fa5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "46a3d464-7171-46de-9fcc-4c0e269cf88c",
+    "name": "Retrieve URIs to collections of audits",
+    "url": "{{baseUrl}}/audit",
+    "method": "GET",
+    "sortNum": 480000,
+    "created": "2022-06-02T05:29:43.145Z",
+    "modified": "2022-06-02T05:29:43.145Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "bb442be2-1e48-48cd-8628-1c30947a9201",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "e831fc20-a43e-4e67-94df-ddbf34a7f87c",
+    "name": "Create an audit record",
+    "url": "{{baseUrl}}/audit/auditRecords",
+    "method": "POST",
+    "sortNum": 490000,
+    "created": "2022-06-02T05:29:43.146Z",
+    "modified": "2022-06-02T05:29:43.146Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "51e8a69e-a122-44bc-b0a1-6e2753da8225",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "e831fc20-a43e-4e67-94df-ddbf34a7f87c",
+    "name": "Retrieve all audit records",
+    "url": "{{baseUrl}}/audit/auditRecords",
+    "method": "GET",
+    "sortNum": 500000,
+    "created": "2022-06-02T05:29:43.147Z",
+    "modified": "2022-06-02T05:29:43.147Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "547d4eaa-736b-4451-a535-6bb9bb7e3a62",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "e831fc20-a43e-4e67-94df-ddbf34a7f87c",
+    "name": "Retrieve a specific audit record",
+    "url": "{{baseUrl}}/audit/auditRecords/{id}",
+    "method": "GET",
+    "sortNum": 510000,
+    "created": "2022-06-02T05:29:43.149Z",
+    "modified": "2022-06-02T05:29:43.149Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c3e9afe1-da1b-449d-9ff5-37ecb7f51dc2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "41eed7eb-308c-4fb9-912c-19f1316483e7",
+    "name": "Retrieve URIs to collections of events",
+    "url": "{{baseUrl}}/event",
+    "method": "GET",
+    "sortNum": 520000,
+    "created": "2022-06-02T05:29:43.150Z",
+    "modified": "2022-06-02T05:29:43.150Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e0cb9635-859b-45ab-b55a-ef70affa78d3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "813dd258-eb84-46f7-8269-4fd671050b6f",
+    "name": "Create an event",
+    "url": "{{baseUrl}}/event/events",
+    "method": "POST",
+    "sortNum": 530000,
+    "created": "2022-06-02T05:29:43.151Z",
+    "modified": "2022-06-02T05:29:43.151Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "2bea8e43-b2f5-44a0-ae41-1e225412147a",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "813dd258-eb84-46f7-8269-4fd671050b6f",
+    "name": "Retrieve all events",
+    "url": "{{baseUrl}}/event/events",
+    "method": "GET",
+    "sortNum": 540000,
+    "created": "2022-06-02T05:29:43.152Z",
+    "modified": "2022-06-02T05:29:43.152Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7cc1aaa5-9233-4f4f-9070-e53fbafe6ba8",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "813dd258-eb84-46f7-8269-4fd671050b6f",
+    "name": "Remove event collections",
+    "url": "{{baseUrl}}/event/events",
+    "method": "DELETE",
+    "sortNum": 550000,
+    "created": "2022-06-02T05:29:43.153Z",
+    "modified": "2022-06-02T05:29:43.153Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "3bfdd82c-1189-4dd9-849c-0120e6c198e5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "813dd258-eb84-46f7-8269-4fd671050b6f",
+    "name": "Retrieve a specific event",
+    "url": "{{baseUrl}}/event/events/{id}",
+    "method": "GET",
+    "sortNum": 560000,
+    "created": "2022-06-02T05:29:43.154Z",
+    "modified": "2022-06-02T05:29:43.154Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "990762f4-4b9d-459e-8c55-b7f112e5b1d2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "813dd258-eb84-46f7-8269-4fd671050b6f",
+    "name": "Update a specific event",
+    "url": "{{baseUrl}}/event/events/{id}",
+    "method": "PUT",
+    "sortNum": 570000,
+    "created": "2022-06-02T05:29:43.155Z",
+    "modified": "2022-06-02T05:29:43.155Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "764349d3-82a1-47c1-98b8-f681a31f7911",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "813dd258-eb84-46f7-8269-4fd671050b6f",
+    "name": "Remove a specific event",
+    "url": "{{baseUrl}}/event/events/{id}",
+    "method": "DELETE",
+    "sortNum": 580000,
+    "created": "2022-06-02T05:29:43.156Z",
+    "modified": "2022-06-02T05:29:43.156Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "63f8d0e7-a532-42cf-91c9-f78df3633ae0",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "103f3469-dedf-45ad-86c1-3a8179b67040",
+    "name": "Attach a file to a specific event",
+    "url": "{{baseUrl}}/event/events/{id}/binaries",
+    "method": "POST",
+    "sortNum": 590000,
+    "created": "2022-06-02T05:29:43.157Z",
+    "modified": "2022-06-02T05:29:43.157Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "text",
+      "raw": "thunder"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ce983c33-ff03-4b70-9c5d-aba3e7085e6e",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "103f3469-dedf-45ad-86c1-3a8179b67040",
+    "name": "Retrieve the attached file of a specific event",
+    "url": "{{baseUrl}}/event/events/{id}/binaries",
+    "method": "GET",
+    "sortNum": 600000,
+    "created": "2022-06-02T05:29:43.158Z",
+    "modified": "2022-06-02T05:29:43.158Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e9f67c14-a363-4d9f-a4f7-3f2053dbf70d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "103f3469-dedf-45ad-86c1-3a8179b67040",
+    "name": "Replace the attached file of a specific event",
+    "url": "{{baseUrl}}/event/events/{id}/binaries",
+    "method": "PUT",
+    "sortNum": 610000,
+    "created": "2022-06-02T05:29:43.159Z",
+    "modified": "2022-06-02T05:29:43.159Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "text",
+      "raw": "thunder"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b1b1b821-a85f-43e0-a0f8-2518587a491b",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "103f3469-dedf-45ad-86c1-3a8179b67040",
+    "name": "Remove the attached file from a specific event",
+    "url": "{{baseUrl}}/event/events/{id}/binaries",
+    "method": "DELETE",
+    "sortNum": 620000,
+    "created": "2022-06-02T05:29:43.160Z",
+    "modified": "2022-06-02T05:29:43.160Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "412b26f8-205a-4712-a6f1-73dd71ebb552",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "179aafd8-d713-4239-a55a-59f14a372e82",
+    "name": "Retrieve URIs to collections of managed objects",
+    "url": "{{baseUrl}}/inventory",
+    "method": "GET",
+    "sortNum": 630000,
+    "created": "2022-06-02T05:29:43.161Z",
+    "modified": "2022-06-02T05:29:43.161Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "a15b12aa-3655-4f71-aa0f-7f7ad96d6151",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "abf5d855-d9a7-468b-8dab-6370a3e3d3f2",
+    "name": "Upload a file",
+    "url": "{{baseUrl}}/inventory/binaries",
+    "method": "POST",
+    "sortNum": 640000,
+    "created": "2022-06-02T05:29:43.162Z",
+    "modified": "2022-06-02T05:29:43.162Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "form": [
+        {
+          "name": "object",
+          "value": "{\"name\":\"HelloWorld\",\"type\":\"text/plain\"}"
+        },
+        {
+          "name": "file",
+          "value": "hello.txt"
+        }
+      ]
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "6e20b586-9d0f-4686-a1e7-e903e01c0341",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "abf5d855-d9a7-468b-8dab-6370a3e3d3f2",
+    "name": "Retrieve the stored files",
+    "url": "{{baseUrl}}/inventory/binaries",
+    "method": "GET",
+    "sortNum": 650000,
+    "created": "2022-06-02T05:29:43.163Z",
+    "modified": "2022-06-02T05:29:43.163Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "89fd2f16-5f9c-4b67-b027-ba3ed3453986",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "abf5d855-d9a7-468b-8dab-6370a3e3d3f2",
+    "name": "Retrieve a stored file",
+    "url": "{{baseUrl}}/inventory/binaries/{id}",
+    "method": "GET",
+    "sortNum": 660000,
+    "created": "2022-06-02T05:29:43.164Z",
+    "modified": "2022-06-02T05:29:43.164Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "301743b8-5c62-4234-bf5a-d7065a0c5e68",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "abf5d855-d9a7-468b-8dab-6370a3e3d3f2",
+    "name": "Replace a file",
+    "url": "{{baseUrl}}/inventory/binaries/{id}",
+    "method": "PUT",
+    "sortNum": 670000,
+    "created": "2022-06-02T05:29:43.165Z",
+    "modified": "2022-06-02T05:29:43.165Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "text",
+      "raw": "thunder"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "49beea28-a5bb-4205-b278-35ba473ce001",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "abf5d855-d9a7-468b-8dab-6370a3e3d3f2",
+    "name": "Remove a stored file",
+    "url": "{{baseUrl}}/inventory/binaries/{id}",
+    "method": "DELETE",
+    "sortNum": 680000,
+    "created": "2022-06-02T05:29:43.166Z",
+    "modified": "2022-06-02T05:29:43.166Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e138998c-c46a-4ba6-9ea4-a85f24dbcfbe",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Create a managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects",
+    "method": "POST",
+    "sortNum": 690000,
+    "created": "2022-06-02T05:29:43.167Z",
+    "modified": "2022-06-02T05:29:43.167Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8751b727-ab93-47f8-a733-77880523c1a0",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve all managed objects",
+    "url": "{{baseUrl}}/inventory/managedObjects",
+    "method": "GET",
+    "sortNum": 700000,
+    "created": "2022-06-02T05:29:43.168Z",
+    "modified": "2022-06-02T05:29:43.168Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "dddfe503-dd1f-4be3-a539-5b5f7bc4856c",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve the total number of managed objects",
+    "url": "{{baseUrl}}/inventory/managedObjects/count",
+    "method": "GET",
+    "sortNum": 710000,
+    "created": "2022-06-02T05:29:43.169Z",
+    "modified": "2022-06-02T05:29:43.169Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "f017f15a-1ee7-4feb-b07f-af7be3381d79",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}",
+    "method": "GET",
+    "sortNum": 720000,
+    "created": "2022-06-02T05:29:43.170Z",
+    "modified": "2022-06-02T05:29:43.170Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "9b3b3571-ced8-4461-b2ab-4a56b54f803f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Update a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}",
+    "method": "PUT",
+    "sortNum": 730000,
+    "created": "2022-06-02T05:29:43.171Z",
+    "modified": "2022-06-02T05:29:43.171Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b4fe2b30-ca37-45c7-ab1c-c67757cacd12",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Remove a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}",
+    "method": "DELETE",
+    "sortNum": 740000,
+    "created": "2022-06-02T05:29:43.172Z",
+    "modified": "2022-06-02T05:29:43.172Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "6b7741ea-23c8-4320-845f-8df41bd295b6",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve the latest availability date of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/availability",
+    "method": "GET",
+    "sortNum": 750000,
+    "created": "2022-06-02T05:29:43.173Z",
+    "modified": "2022-06-02T05:29:43.173Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "a10d2c20-6559-41cb-b460-22b5ee7cab9a",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Assign a managed object as child addition",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAdditions",
+    "method": "POST",
+    "sortNum": 760000,
+    "created": "2022-06-02T05:29:43.174Z",
+    "modified": "2022-06-02T05:29:43.174Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "920c6808-c20a-4a63-a314-9505def8e50d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Retrieve all child additions of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAdditions",
+    "method": "GET",
+    "sortNum": 770000,
+    "created": "2022-06-02T05:29:43.175Z",
+    "modified": "2022-06-02T05:29:43.175Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "f01e85ce-3cd0-478c-a703-bd1fa016b6d9",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Remove specific child additions from its parent",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAdditions",
+    "method": "DELETE",
+    "sortNum": 780000,
+    "created": "2022-06-02T05:29:43.176Z",
+    "modified": "2022-06-02T05:29:43.176Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "439c7d90-afe1-42c3-8de6-c24b60ddaac5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Retrieve a specific child addition of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAdditions/{childId}",
+    "method": "GET",
+    "sortNum": 790000,
+    "created": "2022-06-02T05:29:43.177Z",
+    "modified": "2022-06-02T05:29:43.177Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d60b1683-ea14-4565-89c4-4fb478ed8697",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Remove a specific child addition from its parent",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAdditions/{childId}",
+    "method": "DELETE",
+    "sortNum": 800000,
+    "created": "2022-06-02T05:29:43.178Z",
+    "modified": "2022-06-02T05:29:43.178Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ee9df696-02db-4b5c-822f-9a475456e20d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Assign a managed object as child asset",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAssets",
+    "method": "POST",
+    "sortNum": 810000,
+    "created": "2022-06-02T05:29:43.179Z",
+    "modified": "2022-06-02T05:29:43.179Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "6aa6ac2f-8d1c-4378-897a-9b252007e4c8",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Retrieve all child assets of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAssets",
+    "method": "GET",
+    "sortNum": 820000,
+    "created": "2022-06-02T05:29:43.180Z",
+    "modified": "2022-06-02T05:29:43.180Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "daef0ea4-495d-43bc-be43-c46bf4acbaf8",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Remove specific child assets from its parent",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAssets",
+    "method": "DELETE",
+    "sortNum": 830000,
+    "created": "2022-06-02T05:29:43.181Z",
+    "modified": "2022-06-02T05:29:43.181Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e420c93f-84e4-4a9e-bc6d-402e3e929dc3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Retrieve a specific child asset of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAssets/{childId}",
+    "method": "GET",
+    "sortNum": 840000,
+    "created": "2022-06-02T05:29:43.182Z",
+    "modified": "2022-06-02T05:29:43.182Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8a57179d-0b2a-4381-b66d-90bf22c926a4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Remove a specific child asset from its parent",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childAssets/{childId}",
+    "method": "DELETE",
+    "sortNum": 850000,
+    "created": "2022-06-02T05:29:43.183Z",
+    "modified": "2022-06-02T05:29:43.183Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4565c86e-5d17-4d02-9b3f-d6b97572d28f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Assign a managed object as child device",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childDevices",
+    "method": "POST",
+    "sortNum": 860000,
+    "created": "2022-06-02T05:29:43.184Z",
+    "modified": "2022-06-02T05:29:43.184Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "6f1b3b5f-771b-4aba-9702-197071d9db65",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Retrieve all child devices of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childDevices",
+    "method": "GET",
+    "sortNum": 870000,
+    "created": "2022-06-02T05:29:43.185Z",
+    "modified": "2022-06-02T05:29:43.185Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ec8c7c28-f56e-4d0c-b4c5-1e20506f73b2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Remove specific child devices from its parent",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childDevices",
+    "method": "DELETE",
+    "sortNum": 880000,
+    "created": "2022-06-02T05:29:43.186Z",
+    "modified": "2022-06-02T05:29:43.186Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d360cb2f-3c43-4aae-ae2a-b2911ef91f44",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Retrieve a specific child device of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childDevices/{childId}",
+    "method": "GET",
+    "sortNum": 890000,
+    "created": "2022-06-02T05:29:43.187Z",
+    "modified": "2022-06-02T05:29:43.187Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8f618d04-0aee-43c3-ac09-bb2fb5b1dbb3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "8b65e953-e714-4285-95a0-886649f4ad03",
+    "name": "Remove a specific child device from its parent",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/childDevices/{childId}",
+    "method": "DELETE",
+    "sortNum": 900000,
+    "created": "2022-06-02T05:29:43.188Z",
+    "modified": "2022-06-02T05:29:43.188Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "dc7b1ebb-0175-4946-a3fb-f6e725b308c2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve all supported measurement fragments of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/supportedMeasurements",
+    "method": "GET",
+    "sortNum": 910000,
+    "created": "2022-06-02T05:29:43.189Z",
+    "modified": "2022-06-02T05:29:43.189Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "979bf576-94a3-4453-a563-17b8a64ec048",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve all supported measurement fragments and series of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/supportedSeries",
+    "method": "GET",
+    "sortNum": 920000,
+    "created": "2022-06-02T05:29:43.190Z",
+    "modified": "2022-06-02T05:29:43.190Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "686a6fc5-649a-4a67-8fa2-46d6a6b8c8d4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Retrieve the username and state of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/user",
+    "method": "GET",
+    "sortNum": 930000,
+    "created": "2022-06-02T05:29:43.191Z",
+    "modified": "2022-06-02T05:29:43.191Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "156e957b-90fe-47c8-91f5-3c84d6b16895",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
+    "name": "Update the user's details of a specific managed object",
+    "url": "{{baseUrl}}/inventory/managedObjects/{id}/user",
+    "method": "PUT",
+    "sortNum": 940000,
+    "created": "2022-06-02T05:29:43.192Z",
+    "modified": "2022-06-02T05:29:43.192Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d8e3f0bc-426d-4416-bf0e-3d2e27598d80",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "e4cf5f51-b73f-48a7-92fa-86ddd0409f16",
+    "name": "Retrieve URIs to collections of external IDs",
+    "url": "{{baseUrl}}/identity",
+    "method": "GET",
+    "sortNum": 950000,
+    "created": "2022-06-02T05:29:43.193Z",
+    "modified": "2022-06-02T05:29:43.193Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "2748e0a0-9d9a-4dfa-9298-f91049c1a005",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2a268d77-8e54-4a15-bad4-f553906c015f",
+    "name": "Create an external ID",
+    "url": "{{baseUrl}}/identity/globalIds/{id}/externalIds",
+    "method": "POST",
+    "sortNum": 960000,
+    "created": "2022-06-02T05:29:43.194Z",
+    "modified": "2022-06-02T05:29:43.194Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4231b775-d134-40b4-8209-6493f2a1151c",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2a268d77-8e54-4a15-bad4-f553906c015f",
+    "name": "Retrieve all external IDs of a specific managed object",
+    "url": "{{baseUrl}}/identity/globalIds/{id}/externalIds",
+    "method": "GET",
+    "sortNum": 970000,
+    "created": "2022-06-02T05:29:43.195Z",
+    "modified": "2022-06-02T05:29:43.195Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8edc08fa-8f67-488f-8e5c-cee06ea4cd94",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2a268d77-8e54-4a15-bad4-f553906c015f",
+    "name": "Retrieve a specific external ID",
+    "url": "{{baseUrl}}/identity/externalIds/{type}/{externalId}",
+    "method": "GET",
+    "sortNum": 980000,
+    "created": "2022-06-02T05:29:43.196Z",
+    "modified": "2022-06-02T05:29:43.196Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "512cb50b-3e6c-46f0-8498-4ac7d80f0dc4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "2a268d77-8e54-4a15-bad4-f553906c015f",
+    "name": "Remove a specific external ID",
+    "url": "{{baseUrl}}/identity/externalIds/{type}/{externalId}",
+    "method": "DELETE",
+    "sortNum": 990000,
+    "created": "2022-06-02T05:29:43.197Z",
+    "modified": "2022-06-02T05:29:43.197Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c7f883c8-7a26-4a07-bbb1-bed8c32304e7",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "da600723-559b-4828-959c-7dcb727a5dab",
+    "name": "Retrieve URIs to collections of users, groups and roles",
+    "url": "{{baseUrl}}/user",
+    "method": "GET",
+    "sortNum": 1000000,
+    "created": "2022-06-02T05:29:43.198Z",
+    "modified": "2022-06-02T05:29:43.198Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4a72f732-1476-41f8-a8ed-8b1d692d13f4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "7cab4ea3-4f27-4704-8629-9cbfc0d3521f",
+    "name": "Retrieve the current user",
+    "url": "{{baseUrl}}/user/currentUser",
+    "method": "GET",
+    "sortNum": 1010000,
+    "created": "2022-06-02T05:29:43.199Z",
+    "modified": "2022-06-02T05:29:43.199Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "98fd19c1-c51c-4a29-81c9-c0dc9479aeb6",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "7cab4ea3-4f27-4704-8629-9cbfc0d3521f",
+    "name": "Update the current user",
+    "url": "{{baseUrl}}/user/currentUser",
+    "method": "PUT",
+    "sortNum": 1020000,
+    "created": "2022-06-02T05:29:43.200Z",
+    "modified": "2022-06-02T05:29:43.200Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "87672ee4-add8-4cbf-8ba1-7aa70cbb14b3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Create an inventory role",
+    "url": "{{baseUrl}}/user/inventoryroles",
+    "method": "POST",
+    "sortNum": 1030000,
+    "created": "2022-06-02T05:29:43.201Z",
+    "modified": "2022-06-02T05:29:43.201Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0dee773a-1f1c-4c9d-b911-968df82c38c5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Retrieve all inventory roles",
+    "url": "{{baseUrl}}/user/inventoryroles",
+    "method": "GET",
+    "sortNum": 1040000,
+    "created": "2022-06-02T05:29:43.202Z",
+    "modified": "2022-06-02T05:29:43.202Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4de871e6-9ece-4eb4-a79b-353538e6b133",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Retrieve a specific inventory role",
+    "url": "{{baseUrl}}/user/inventoryroles/{id}",
+    "method": "GET",
+    "sortNum": 1050000,
+    "created": "2022-06-02T05:29:43.203Z",
+    "modified": "2022-06-02T05:29:43.203Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "530f185f-ea72-432e-9e48-569e07f84b9d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Update a specific inventory role",
+    "url": "{{baseUrl}}/user/inventoryroles/{id}",
+    "method": "PUT",
+    "sortNum": 1060000,
+    "created": "2022-06-02T05:29:43.204Z",
+    "modified": "2022-06-02T05:29:43.204Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "cc661a32-622c-44d0-93ad-98b4ea7040ce",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Remove a specific inventory role",
+    "url": "{{baseUrl}}/user/inventoryroles/{id}",
+    "method": "DELETE",
+    "sortNum": 1070000,
+    "created": "2022-06-02T05:29:43.205Z",
+    "modified": "2022-06-02T05:29:43.205Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e4b23c5b-dc43-4458-b887-1b06e6c57d37",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Retrieve all user roles",
+    "url": "{{baseUrl}}/user/roles",
+    "method": "GET",
+    "sortNum": 1080000,
+    "created": "2022-06-02T05:29:43.206Z",
+    "modified": "2022-06-02T05:29:43.206Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0672fa91-c88a-4cf5-840b-256fcfe25004",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Retrieve a user role by name",
+    "url": "{{baseUrl}}/user/roles/{name}",
+    "method": "GET",
+    "sortNum": 1090000,
+    "created": "2022-06-02T05:29:43.207Z",
+    "modified": "2022-06-02T05:29:43.207Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8f4718e2-d2ea-45c6-aa9c-5f9f04ef5924",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Create a user for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users",
+    "method": "POST",
+    "sortNum": 1100000,
+    "created": "2022-06-02T05:29:43.208Z",
+    "modified": "2022-06-02T05:29:43.208Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ab9a2a5c-7caa-474c-a10b-78b6fbbe853d",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Retrieve all users for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users",
+    "method": "GET",
+    "sortNum": 1110000,
+    "created": "2022-06-02T05:29:43.209Z",
+    "modified": "2022-06-02T05:29:43.209Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ef2ae616-202c-48ba-863b-5781ed564cbb",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Retrieve a specific user for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}",
+    "method": "GET",
+    "sortNum": 1120000,
+    "created": "2022-06-02T05:29:43.210Z",
+    "modified": "2022-06-02T05:29:43.210Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "9b513eae-5533-4554-b86a-038b0b17b25f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Update a specific user for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}",
+    "method": "PUT",
+    "sortNum": 1130000,
+    "created": "2022-06-02T05:29:43.211Z",
+    "modified": "2022-06-02T05:29:43.211Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "42ab4278-f160-4b89-b0f7-298b4cf99b6e",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Delete a specific user for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}",
+    "method": "DELETE",
+    "sortNum": 1140000,
+    "created": "2022-06-02T05:29:43.212Z",
+    "modified": "2022-06-02T05:29:43.212Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "2326b60c-8583-4c04-9275-ceab77d749d0",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Retrieve a user by username in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/userByName/{username}",
+    "method": "GET",
+    "sortNum": 1150000,
+    "created": "2022-06-02T05:29:43.213Z",
+    "modified": "2022-06-02T05:29:43.213Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "bd316e3c-a2b7-4fda-8799-402ebe1c3504",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Create a user group for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups",
+    "method": "POST",
+    "sortNum": 1160000,
+    "created": "2022-06-02T05:29:43.214Z",
+    "modified": "2022-06-02T05:29:43.214Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8eece986-f455-42ed-8d3a-abd600e380cf",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Retrieve all user groups of a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups",
+    "method": "GET",
+    "sortNum": 1170000,
+    "created": "2022-06-02T05:29:43.215Z",
+    "modified": "2022-06-02T05:29:43.215Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e948ca11-5dbb-4256-8f34-7d634ef7dbb3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Retrieve a specific user group for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}",
+    "method": "GET",
+    "sortNum": 1180000,
+    "created": "2022-06-02T05:29:43.216Z",
+    "modified": "2022-06-02T05:29:43.216Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b0a9e40d-1d27-41ed-9c7c-fb03b9688818",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Update a specific user group for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}",
+    "method": "PUT",
+    "sortNum": 1190000,
+    "created": "2022-06-02T05:29:43.217Z",
+    "modified": "2022-06-02T05:29:43.217Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4ec9848f-8d66-46ce-8115-e4c9df990974",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Delete a specific user group for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}",
+    "method": "DELETE",
+    "sortNum": 1200000,
+    "created": "2022-06-02T05:29:43.218Z",
+    "modified": "2022-06-02T05:29:43.218Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "fcecd9e7-dab5-4142-8a8a-2d82cc694c0e",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Assign a role to a specific user group in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}/roles",
+    "method": "POST",
+    "sortNum": 1210000,
+    "created": "2022-06-02T05:29:43.219Z",
+    "modified": "2022-06-02T05:29:43.219Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7dca26c6-31e9-4c41-b86c-2e4a95b69b58",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Retrieve all roles assigned to a specific user group in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}/roles",
+    "method": "GET",
+    "sortNum": 1220000,
+    "created": "2022-06-02T05:29:43.220Z",
+    "modified": "2022-06-02T05:29:43.220Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "35054d84-b99e-4ae7-8137-7bedf3c02561",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Unassign a specific role for a specific user group in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}/roles/{roleId}",
+    "method": "DELETE",
+    "sortNum": 1230000,
+    "created": "2022-06-02T05:29:43.221Z",
+    "modified": "2022-06-02T05:29:43.221Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "2e62023e-d0eb-4ec4-ae71-b506e99ef3b2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Add a user to a specific user group of a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}/users",
+    "method": "POST",
+    "sortNum": 1240000,
+    "created": "2022-06-02T05:29:43.222Z",
+    "modified": "2022-06-02T05:29:43.222Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e8f30023-150d-4ebe-ad70-276a209bce1e",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Retrieve the users of a specific user group of a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}/users",
+    "method": "GET",
+    "sortNum": 1250000,
+    "created": "2022-06-02T05:29:43.223Z",
+    "modified": "2022-06-02T05:29:43.223Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "57fbd45a-1ce2-4714-a651-38a421d5d20b",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b415f8b7-864d-48aa-b458-c5cf36f161fe",
+    "name": "Remove a specific user from a specific user group of a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groups/{groupId}/users/{userId}",
+    "method": "DELETE",
+    "sortNum": 1260000,
+    "created": "2022-06-02T05:29:43.224Z",
+    "modified": "2022-06-02T05:29:43.224Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1065d8ef-122f-483d-a51e-5c1de8dc7035",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Retrieve a user group by group name for a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/groupByName/{groupName}",
+    "method": "GET",
+    "sortNum": 1270000,
+    "created": "2022-06-02T05:29:43.225Z",
+    "modified": "2022-06-02T05:29:43.225Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "a81a32c4-c5ed-41d8-828c-b4cd4bb34fcd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1792710a-ccf1-4c92-85ae-4c7ed0fb2dbd",
+    "name": "Get all user groups for specific user in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/groups",
+    "method": "GET",
+    "sortNum": 1280000,
+    "created": "2022-06-02T05:29:43.226Z",
+    "modified": "2022-06-02T05:29:43.226Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ddce5ce9-464e-4cb4-830a-026b6ab944be",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Assign a role to specific user in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles",
+    "method": "POST",
+    "sortNum": 1290000,
+    "created": "2022-06-02T05:29:43.227Z",
+    "modified": "2022-06-02T05:29:43.227Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "282995f2-1443-4079-9265-65f835b0a4cf",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9e72bb28-beac-4577-91ab-8bcb740096b1",
+    "name": "Unassign a specific role from a specific user in a specific tenant",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles/{roleId}",
+    "method": "DELETE",
+    "sortNum": 1300000,
+    "created": "2022-06-02T05:29:43.228Z",
+    "modified": "2022-06-02T05:29:43.228Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "fe9c0b84-063d-4cf3-9112-9b2c111bacf9",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Assign an inventory role to a user",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles/inventory",
+    "method": "POST",
+    "sortNum": 1310000,
+    "created": "2022-06-02T05:29:43.229Z",
+    "modified": "2022-06-02T05:29:43.229Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "ff09e850-d52e-4ec7-ac41-17cc4e07eda3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Retrieve all inventory roles assigned to a user",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles/inventory",
+    "method": "GET",
+    "sortNum": 1320000,
+    "created": "2022-06-02T05:29:43.230Z",
+    "modified": "2022-06-02T05:29:43.230Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d0befd38-7301-4a80-b032-042344c4e0a5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Retrieve a specific inventory role assigned to a user",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles/inventory/{id}",
+    "method": "GET",
+    "sortNum": 1330000,
+    "created": "2022-06-02T05:29:43.231Z",
+    "modified": "2022-06-02T05:29:43.231Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "567b7c12-e786-44f6-b549-08b9f231e886",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Update a specific inventory role assigned to a user",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles/inventory/{id}",
+    "method": "PUT",
+    "sortNum": 1340000,
+    "created": "2022-06-02T05:29:43.232Z",
+    "modified": "2022-06-02T05:29:43.232Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "0885c97b-8847-48c7-9186-553e923aecb9",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "049029dc-0ccf-4063-9768-215a4aff49ba",
+    "name": "Remove a specific inventory role assigned to a user",
+    "url": "{{baseUrl}}/user/{tenantId}/users/{userId}/roles/inventory/{id}",
+    "method": "DELETE",
+    "sortNum": 1350000,
+    "created": "2022-06-02T05:29:43.233Z",
+    "modified": "2022-06-02T05:29:43.233Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "052836e5-b80b-43c4-af13-c3a50cced701",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "14fc0acc-5e73-4fea-ba5f-b65215e03ea3",
+    "name": "Retrieve URIs to collections of measurements",
+    "url": "{{baseUrl}}/measurement",
+    "method": "GET",
+    "sortNum": 1360000,
+    "created": "2022-06-02T05:29:43.234Z",
+    "modified": "2022-06-02T05:29:43.234Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4a1ebfca-b88a-4f0b-bde5-2a1ef6123631",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+    "name": "Create a measurement",
+    "url": "{{baseUrl}}/measurement/measurements",
+    "method": "POST",
+    "sortNum": 1370000,
+    "created": "2022-06-02T05:29:43.235Z",
+    "modified": "2022-06-02T05:29:43.235Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "3c9a2b54-71dc-4201-9c1a-425aed06a6fd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+    "name": "Retrieve all measurements",
+    "url": "{{baseUrl}}/measurement/measurements",
+    "method": "GET",
+    "sortNum": 1380000,
+    "created": "2022-06-02T05:29:43.236Z",
+    "modified": "2022-06-02T05:29:43.236Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7e806feb-fb19-40b3-a4fb-cb09eee582c8",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+    "name": "Remove measurement collections",
+    "url": "{{baseUrl}}/measurement/measurements",
+    "method": "DELETE",
+    "sortNum": 1390000,
+    "created": "2022-06-02T05:29:43.237Z",
+    "modified": "2022-06-02T05:29:43.237Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "bca3dada-7f4e-4457-8b11-825f231bee69",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+    "name": "Retrieve a specific measurement",
+    "url": "{{baseUrl}}/measurement/measurements/{id}",
+    "method": "GET",
+    "sortNum": 1400000,
+    "created": "2022-06-02T05:29:43.238Z",
+    "modified": "2022-06-02T05:29:43.238Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8a1de4ae-c23d-4cff-9329-512e1cb5c93b",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+    "name": "Remove a specific measurement",
+    "url": "{{baseUrl}}/measurement/measurements/{id}",
+    "method": "DELETE",
+    "sortNum": 1410000,
+    "created": "2022-06-02T05:29:43.239Z",
+    "modified": "2022-06-02T05:29:43.239Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c95b4164-d452-41f6-a42a-9880d05ec0a2",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "9708f7a3-20f6-44b6-9ad8-067cef77fba9",
+    "name": "Retrieve a list of series and their values",
+    "url": "{{baseUrl}}/measurement/measurements/series",
+    "method": "GET",
+    "sortNum": 1420000,
+    "created": "2022-06-02T05:29:43.240Z",
+    "modified": "2022-06-02T05:29:43.240Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "25cf159d-7124-4f2c-afb9-257ef16dc1be",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "0f668cf2-6b4d-49f4-9251-82d0f1095a43",
+    "name": "Retrieve URIs to collections of notification subscriptions",
+    "url": "{{baseUrl}}/notification2",
+    "method": "GET",
+    "sortNum": 1430000,
+    "created": "2022-06-02T05:29:43.241Z",
+    "modified": "2022-06-02T05:29:43.241Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "e269d8e6-9c3c-4086-a456-bf435967ae8e",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "85014019-8a94-46d5-9c48-4f79a23c2025",
+    "name": "Create a notification token",
+    "url": "{{baseUrl}}/notification2/token",
+    "method": "POST",
+    "sortNum": 1440000,
+    "created": "2022-06-02T05:29:43.242Z",
+    "modified": "2022-06-02T05:29:43.242Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"expiresInMinutes\": 1440,\n  \"subscriber\": \"thunder\",\n  \"subscription\": \"thunder\"\n}"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "75893320-073f-4738-bd53-6f933ba2c0ae",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6619592e-4375-4043-a8ac-2dc3ae5cb952",
+    "name": "Create a subscription",
+    "url": "{{baseUrl}}/notification2/subscriptions",
+    "method": "POST",
+    "sortNum": 1450000,
+    "created": "2022-06-02T05:29:43.243Z",
+    "modified": "2022-06-02T05:29:43.243Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4805255a-fae9-44e9-b602-c2dcf06ef562",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6619592e-4375-4043-a8ac-2dc3ae5cb952",
+    "name": "Retrieve all subscriptions",
+    "url": "{{baseUrl}}/notification2/subscriptions",
+    "method": "GET",
+    "sortNum": 1460000,
+    "created": "2022-06-02T05:29:43.244Z",
+    "modified": "2022-06-02T05:29:43.244Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4bca3817-9026-4b14-971a-e3c3df3719cb",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6619592e-4375-4043-a8ac-2dc3ae5cb952",
+    "name": "Remove subscriptions by source",
+    "url": "{{baseUrl}}/notification2/subscriptions",
+    "method": "DELETE",
+    "sortNum": 1470000,
+    "created": "2022-06-02T05:29:43.245Z",
+    "modified": "2022-06-02T05:29:43.245Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4d1469f5-a26b-48c5-bc9c-4fd5f4d94ce5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6619592e-4375-4043-a8ac-2dc3ae5cb952",
+    "name": "Retrieve a specific subscription",
+    "url": "{{baseUrl}}/notification2/subscriptions/{id}",
+    "method": "GET",
+    "sortNum": 1480000,
+    "created": "2022-06-02T05:29:43.246Z",
+    "modified": "2022-06-02T05:29:43.246Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "362a3a71-eac6-4310-8670-cd302d876b9c",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "6619592e-4375-4043-a8ac-2dc3ae5cb952",
+    "name": "Remove a specific subscription",
+    "url": "{{baseUrl}}/notification2/subscriptions/{id}",
+    "method": "DELETE",
+    "sortNum": 1490000,
+    "created": "2022-06-02T05:29:43.247Z",
+    "modified": "2022-06-02T05:29:43.247Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "86654d8e-c278-456d-a0a0-a547b05364e7",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "52497ecd-40f2-4197-bc31-e058645395a6",
+    "name": "Responsive communication",
+    "url": "{{baseUrl}}/notification/realtime",
+    "method": "POST",
+    "sortNum": 1500000,
+    "created": "2022-06-02T05:29:43.248Z",
+    "modified": "2022-06-02T05:29:43.248Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"advice\": {\n    \"interval\": 8,\n    \"timeout\": 59\n  },\n  \"channel\": \"/meta/handshake\",\n  \"clientId\": \"thunder\",\n  \"connectionType\": \"thunder\",\n  \"data\": {},\n  \"error\": \"thunder\",\n  \"ext\": {\n    \"com.cumulocity.authn\": {\n      \"token\": \"thunder\",\n      \"tfa\": \"thunder\",\n      \"xsrfToken\": \"thunder\"\n    },\n    \"systemOfUnits\": \"imperial\"\n  },\n  \"id\": \"thunder\",\n  \"minimumVersion\": \"thunder\",\n  \"subscription\": \"thunder\",\n  \"successful\": true,\n  \"supportedConnectionTypes\": [\n    \"thunder\"\n  ],\n  \"version\": \"thunder\"\n}"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "147729a4-0f82-4104-8934-c0fcd61a4ef5",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "d36c20d0-90ef-426b-8c6b-ad2b32b90869",
+    "name": "Create a retention rule",
+    "url": "{{baseUrl}}/retention/retentions",
+    "method": "POST",
+    "sortNum": 1510000,
+    "created": "2022-06-02T05:29:43.249Z",
+    "modified": "2022-06-02T05:29:43.249Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d64c25b4-f0d0-447e-9375-8a8245b5bd81",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "d36c20d0-90ef-426b-8c6b-ad2b32b90869",
+    "name": "Retrieve all retention rules",
+    "url": "{{baseUrl}}/retention/retentions",
+    "method": "GET",
+    "sortNum": 1520000,
+    "created": "2022-06-02T05:29:43.250Z",
+    "modified": "2022-06-02T05:29:43.250Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "40d6b3dc-2019-4d54-b22b-bf012755c526",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "d36c20d0-90ef-426b-8c6b-ad2b32b90869",
+    "name": "Retrieve a retention rule",
+    "url": "{{baseUrl}}/retention/retentions/{id}",
+    "method": "GET",
+    "sortNum": 1530000,
+    "created": "2022-06-02T05:29:43.251Z",
+    "modified": "2022-06-02T05:29:43.251Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c39218ed-3c1a-4647-bcca-f5902938fd52",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "d36c20d0-90ef-426b-8c6b-ad2b32b90869",
+    "name": "Update a retention rule",
+    "url": "{{baseUrl}}/retention/retentions/{id}",
+    "method": "PUT",
+    "sortNum": 1540000,
+    "created": "2022-06-02T05:29:43.252Z",
+    "modified": "2022-06-02T05:29:43.252Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d6ef6fe2-c393-427e-928a-066801fbc330",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "d36c20d0-90ef-426b-8c6b-ad2b32b90869",
+    "name": "Remove a retention rule",
+    "url": "{{baseUrl}}/retention/retentions/{id}",
+    "method": "DELETE",
+    "sortNum": 1550000,
+    "created": "2022-06-02T05:29:43.253Z",
+    "modified": "2022-06-02T05:29:43.253Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "26662d55-f65c-460a-99e8-c9140c93f993",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "203e5603-ffff-4ce4-accc-a6de0c2c3178",
+    "name": "Retrieve URIs to collections of tenants",
+    "url": "{{baseUrl}}/tenant",
+    "method": "GET",
+    "sortNum": 1560000,
+    "created": "2022-06-02T05:29:43.254Z",
+    "modified": "2022-06-02T05:29:43.254Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8962acb1-6ca4-4dc7-a2f8-e6b3043c4cca",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+    "name": "Create a tenant",
+    "url": "{{baseUrl}}/tenant/tenants",
+    "method": "POST",
+    "sortNum": 1570000,
+    "created": "2022-06-02T05:29:43.255Z",
+    "modified": "2022-06-02T05:29:43.255Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4eeb5aaf-e2ba-4424-b932-16eb126e8b40",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+    "name": "Retrieve all subtenants",
+    "url": "{{baseUrl}}/tenant/tenants",
+    "method": "GET",
+    "sortNum": 1580000,
+    "created": "2022-06-02T05:29:43.256Z",
+    "modified": "2022-06-02T05:29:43.256Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7cb97640-2f2b-4cec-8eaf-5526f5bc4b38",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+    "name": "Retrieve the current tenant",
+    "url": "{{baseUrl}}/tenant/currentTenant",
+    "method": "GET",
+    "sortNum": 1590000,
+    "created": "2022-06-02T05:29:43.258Z",
+    "modified": "2022-06-02T05:29:43.258Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "5557c6ce-05c5-491b-969a-d044e107ae26",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+    "name": "Retrieve a specific tenant",
+    "url": "{{baseUrl}}/tenant/tenants/{tenantId}",
+    "method": "GET",
+    "sortNum": 1600000,
+    "created": "2022-06-02T05:29:43.259Z",
+    "modified": "2022-06-02T05:29:43.259Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "044ed212-a133-4ab1-bcce-af7c8d7cd1e7",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+    "name": "Update a specific tenant",
+    "url": "{{baseUrl}}/tenant/tenants/{tenantId}",
+    "method": "PUT",
+    "sortNum": 1610000,
+    "created": "2022-06-02T05:29:43.260Z",
+    "modified": "2022-06-02T05:29:43.260Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "7ca16dde-1822-4e9a-980f-c591bfe9b746",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "fcdadfb8-54d4-4c80-b020-90e4f824b639",
+    "name": "Remove a specific tenant",
+    "url": "{{baseUrl}}/tenant/tenants/{tenantId}",
+    "method": "DELETE",
+    "sortNum": 1620000,
+    "created": "2022-06-02T05:29:43.261Z",
+    "modified": "2022-06-02T05:29:43.261Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "5f6a2fe8-f5e5-4659-a393-a64dae65f30f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "837aa92c-1b1e-42df-8869-efaab921f0ed",
+    "name": "Subscribe to an application",
+    "url": "{{baseUrl}}/tenant/tenants/{tenantId}/applications",
+    "method": "POST",
+    "sortNum": 1630000,
+    "created": "2022-06-02T05:29:43.262Z",
+    "modified": "2022-06-02T05:29:43.262Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "9f3ce62d-9ec4-448e-874c-58f15313b644",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "837aa92c-1b1e-42df-8869-efaab921f0ed",
+    "name": "Retrieve subscribed applications",
+    "url": "{{baseUrl}}/tenant/tenants/{tenantId}/applications",
+    "method": "GET",
+    "sortNum": 1640000,
+    "created": "2022-06-02T05:29:43.263Z",
+    "modified": "2022-06-02T05:29:43.263Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1a0050e3-82fb-47f1-84b1-c42b31ba5b9a",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "837aa92c-1b1e-42df-8869-efaab921f0ed",
+    "name": "Unsubscribe from an application",
+    "url": "{{baseUrl}}/tenant/tenants/{tenantId}/applications/{applicationId}",
+    "method": "DELETE",
+    "sortNum": 1650000,
+    "created": "2022-06-02T05:29:43.264Z",
+    "modified": "2022-06-02T05:29:43.264Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "5fce5463-ba8b-435a-a25d-b6c0747cae6b",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Retrieve statistics of the current tenant",
+    "url": "{{baseUrl}}/tenant/statistics",
+    "method": "GET",
+    "sortNum": 1660000,
+    "created": "2022-06-02T05:29:43.265Z",
+    "modified": "2022-06-02T05:29:43.265Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b596f8af-cfcb-4cb9-9a1e-c979dd4c5a5e",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Retrieve a usage statistics summary",
+    "url": "{{baseUrl}}/tenant/statistics/summary",
+    "method": "GET",
+    "sortNum": 1670000,
+    "created": "2022-06-02T05:29:43.266Z",
+    "modified": "2022-06-02T05:29:43.266Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "53d13cd7-5b56-48a7-b079-df76517e7f61",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Retrieve a summary of all usage statistics",
+    "url": "{{baseUrl}}/tenant/statistics/allTenantsSummary",
+    "method": "GET",
+    "sortNum": 1680000,
+    "created": "2022-06-02T05:29:43.267Z",
+    "modified": "2022-06-02T05:29:43.267Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "d1a4b477-fb01-4924-8f3b-24478857be19",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Generate a statistics file report",
+    "url": "{{baseUrl}}/tenant/statistics/files",
+    "method": "POST",
+    "sortNum": 1690000,
+    "created": "2022-06-02T05:29:43.268Z",
+    "modified": "2022-06-02T05:29:43.268Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1c783fec-2c5f-4e84-a477-ed388d9b78fd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Retrieve usage statistics files metadata",
+    "url": "{{baseUrl}}/tenant/statistics/files",
+    "method": "GET",
+    "sortNum": 1700000,
+    "created": "2022-06-02T05:29:43.269Z",
+    "modified": "2022-06-02T05:29:43.269Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c35daeaa-9469-40b9-9edb-41c9e887c8d3",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Retrieve a usage statistics file",
+    "url": "{{baseUrl}}/tenant/statistics/files/{id}",
+    "method": "GET",
+    "sortNum": 1710000,
+    "created": "2022-06-02T05:29:43.270Z",
+    "modified": "2022-06-02T05:29:43.270Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "770950b5-85f2-4b65-b51a-84104ddc4b88",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "b274618c-22df-48e3-aac8-b8e82c07e1bd",
+    "name": "Retrieve the latest usage statistics file",
+    "url": "{{baseUrl}}/tenant/statistics/files/latest/{month}",
+    "method": "GET",
+    "sortNum": 1720000,
+    "created": "2022-06-02T05:29:43.271Z",
+    "modified": "2022-06-02T05:29:43.271Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "8a5b803d-1778-47d3-b925-90008300777f",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "40e45d75-4495-42f3-872c-22778826f975",
+    "name": "Retrieve monthly device statistics",
+    "url": "{{baseUrl}}/tenant/statistics/device/{tenantId}/monthly/{date}",
+    "method": "GET",
+    "sortNum": 1730000,
+    "created": "2022-06-02T05:29:43.272Z",
+    "modified": "2022-06-02T05:29:43.272Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "97df3fe5-e7be-4aa1-937c-1687cc228c6c",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "40e45d75-4495-42f3-872c-22778826f975",
+    "name": "Retrieve daily device statistics",
+    "url": "{{baseUrl}}/tenant/statistics/device/{tenantId}/daily/{date}",
+    "method": "GET",
+    "sortNum": 1740000,
+    "created": "2022-06-02T05:29:43.273Z",
+    "modified": "2022-06-02T05:29:43.273Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "6b4124f6-98d6-421d-8938-b65435a885dd",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "1a4ea189-1616-4ed8-a38d-d367fb3e7294",
+    "name": "Retrieve the login options",
+    "url": "{{baseUrl}}/tenant/loginOptions",
+    "method": "GET",
+    "sortNum": 1750000,
+    "created": "2022-06-02T05:29:43.274Z",
+    "modified": "2022-06-02T05:29:43.274Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "c13de812-1d24-43e9-bcb8-78531149a0d7",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+    "name": "Create an option",
+    "url": "{{baseUrl}}/tenant/options",
+    "method": "POST",
+    "sortNum": 1760000,
+    "created": "2022-06-02T05:29:43.275Z",
+    "modified": "2022-06-02T05:29:43.275Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "a8c9548f-f941-44d5-84c9-4500062e29e7",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+    "name": "Retrieve all options",
+    "url": "{{baseUrl}}/tenant/options",
+    "method": "GET",
+    "sortNum": 1770000,
+    "created": "2022-06-02T05:29:43.276Z",
+    "modified": "2022-06-02T05:29:43.276Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "175ea6cc-30aa-4dc0-9cf9-26a781240490",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+    "name": "Retrieve all options by category",
+    "url": "{{baseUrl}}/tenant/options/{category}",
+    "method": "GET",
+    "sortNum": 1780000,
+    "created": "2022-06-02T05:29:43.277Z",
+    "modified": "2022-06-02T05:29:43.277Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4542a953-0e42-46a2-a52a-46b82a57a273",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+    "name": "Update options by category",
+    "url": "{{baseUrl}}/tenant/options/{category}",
+    "method": "PUT",
+    "sortNum": 1790000,
+    "created": "2022-06-02T05:29:43.278Z",
+    "modified": "2022-06-02T05:29:43.278Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{}"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "734e98aa-8ded-4f43-8cfb-7ca9798d4a3b",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+    "name": "Retrieve a specific option",
+    "url": "{{baseUrl}}/tenant/options/{category}/{key}",
+    "method": "GET",
+    "sortNum": 1800000,
+    "created": "2022-06-02T05:29:43.279Z",
+    "modified": "2022-06-02T05:29:43.279Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "00ea5421-f990-4590-b990-7e78ac284dd4",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "281ee8f5-b768-4c3a-a0b3-25b35ba08e3e",
+    "name": "Update a specific option",
+    "url": "{{baseUrl}}/tenant/options/{category}/{key}",
+    "method": "PUT",
+    "sortNum": 1810000,
+    "created": "2022-06-02T05:29:43.280Z",
+    "modified": "2022-06-02T05:29:43.280Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"value\": \"CRITICAL|temperature too high\"\n}"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "076ccef0-0b79-4671-b9a3-3f232a4fe5d0",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "3b5ecb08-4381-40fc-818d-4aa740254e01",
+    "name": "Retrieve all system options",
+    "url": "{{baseUrl}}/tenant/system/options",
+    "method": "GET",
+    "sortNum": 1820000,
+    "created": "2022-06-02T05:29:43.281Z",
+    "modified": "2022-06-02T05:29:43.281Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "4b74ca07-fa25-4c0e-89fd-766f54a0f997",
+    "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
+    "containerId": "3b5ecb08-4381-40fc-818d-4aa740254e01",
+    "name": "Retrieve a specific system option",
+    "url": "{{baseUrl}}/tenant/system/options/{category}/{key}",
+    "method": "GET",
+    "sortNum": 1830000,
+    "created": "2022-06-02T05:29:43.282Z",
+    "modified": "2022-06-02T05:29:43.282Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "dd5f11dd-97a4-4033-b10a-c7a79cfad0e5",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "Create an option",
+    "url": "{{baseUrl}}/tenant/options",
+    "method": "POST",
+    "sortNum": 1760000,
+    "created": "2022-06-02T05:32:41.768Z",
+    "modified": "2022-06-02T05:32:41.768Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "1230b18d-6cc4-4d96-becd-23cb45243b22",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "Retrieve all options",
+    "url": "{{baseUrl}}/tenant/options",
+    "method": "GET",
+    "sortNum": 1770000,
+    "created": "2022-06-02T05:32:41.769Z",
+    "modified": "2022-06-02T05:32:41.768Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "68d80db6-948d-48f2-8f19-66a36fac0d43",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "Retrieve all options by category",
+    "url": "{{baseUrl}}/tenant/options/{category}",
+    "method": "GET",
+    "sortNum": 1780000,
+    "created": "2022-06-02T05:32:41.770Z",
+    "modified": "2022-06-02T05:35:23.416Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "category",
+        "value": "",
+        "isPath": true
+      }
+    ],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    },
+    "tests": []
+  },
+  {
+    "_id": "4287adaf-2e64-4db7-8627-dfab38293a8c",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "Update options by category",
+    "url": "{{baseUrl}}/tenant/options/{category}",
+    "method": "PUT",
+    "sortNum": 1790000,
+    "created": "2022-06-02T05:32:41.771Z",
+    "modified": "2022-06-02T05:32:41.768Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{}"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "2b7e7970-df9f-4be8-9cc3-90717744b0dd",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "Retrieve a specific option",
+    "url": "{{baseUrl}}/tenant/options/{category}/{key}",
+    "method": "GET",
+    "sortNum": 1800000,
+    "created": "2022-06-02T05:32:41.772Z",
+    "modified": "2022-06-02T05:32:41.768Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "97a70b62-6d37-47a9-807b-6d0dcca10541",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "94ebd112-fa7a-41a0-b76f-64bba4b2713f",
+    "name": "Update a specific option",
+    "url": "{{baseUrl}}/tenant/options/{category}/{key}",
+    "method": "PUT",
+    "sortNum": 1810000,
+    "created": "2022-06-02T05:32:41.773Z",
+    "modified": "2022-06-02T05:32:41.768Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"value\": \"CRITICAL|temperature too high\"\n}"
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "34834bee-3327-40dc-b9f5-08eaf72ebab9",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "bd44b1de-5542-4f74-8e27-a2f9b23f7bbe",
+    "name": "Retrieve the login options",
+    "url": "{{baseUrl}}/tenant/loginOptions",
+    "method": "GET",
+    "sortNum": 1750000,
+    "created": "2022-06-02T05:35:55.662Z",
+    "modified": "2022-06-02T05:35:55.662Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "da7c5ea8-09c4-43af-9ee6-8db665bd37d3",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "62364034-b247-48d2-97ea-2b5a9d5f88ca",
+    "name": "Retrieve all system options",
+    "url": "{{baseUrl}}/tenant/system/options",
+    "method": "GET",
+    "sortNum": 1820000,
+    "created": "2022-06-02T05:35:59.441Z",
+    "modified": "2022-06-02T05:35:59.441Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  },
+  {
+    "_id": "b87411b7-bfe2-41e9-9713-84b7bafa15d5",
+    "colId": "1b2dc9c4-587a-4701-9581-61d09cdb7752",
+    "containerId": "62364034-b247-48d2-97ea-2b5a9d5f88ca",
+    "name": "Retrieve a specific system option",
+    "url": "{{baseUrl}}/tenant/system/options/{category}/{key}",
+    "method": "GET",
+    "sortNum": 1830000,
+    "created": "2022-06-02T05:35:59.442Z",
+    "modified": "2022-06-02T05:35:59.441Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "{{username}}",
+        "password": "{{password}}"
+      }
+    }
+  }
+]

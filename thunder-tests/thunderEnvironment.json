@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "c5980eb1-dfcf-434d-9854-45dd7ad2590b",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -1,
+    "created": "2022-06-02T05:26:58.605Z",
+    "modified": "2022-06-02T05:28:13.792Z",
+    "data": [
+      {
+        "name": "baseUrl",
+        "value": "https://psfactory.eu-latest.cumulocity.com"
+      }
+    ]
+  },
+  {
+    "_id": "51bf558b-faa7-4881-8c9c-60750cfea233",
+    "name": "(Local Env)",
+    "default": false,
+    "global": true,
+    "local": true,
+    "sortNum": -2,
+    "created": "2022-06-02T05:30:01.282Z",
+    "modified": "2022-06-02T05:30:01.282Z",
+    "data": []
+  }
+]
