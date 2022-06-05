@@ -3,7 +3,6 @@ package com.cumulocity.pkiintegration.service;
 import java.time.Duration;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Function;
 
 import org.springframework.stereotype.Service;
 
