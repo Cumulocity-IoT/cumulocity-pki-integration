@@ -1,4 +1,31 @@
 <c8y-title translate>Managed Certificates - PKI</c8y-title>
-<c8y-action-bar-item [placement]="'right'">
-  <a class="btn btn-link" (click)="createCertificate()"> <i [c8yIcon]="'plus-circle'"></i> {{ 'Add certificate' }} </a>
+
+<c8y-action-bar-item itemClass="navbar-form" placement="right">
+  <div class="dropdown" dropdown >
+    <button
+      type="button"
+      title="dropdown-toggle"
+      dropdownToggle
+      class="btn btn-default dropdown-toggle c8y-dropdown"
+    >
+      <span>Add Certificate</span> <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" *dropdownMenu>
+      <li>
+        <button type="button">
+          <i c8yicon="cogs" class="dlt-c8y-icon-cogs"></i>
+          with Cumulocity
+        </button>
+      </li>
+      <li>
+        <button type="button" (click)="createCertificate()">
+          <i c8yIcon="trash" class="dlt-c8y-icon-trash" ></i>
+          With a connected Device
+        </button>
+      </li>
+      
+    </ul>
+  </div>
 </c8y-action-bar-item>
+
+

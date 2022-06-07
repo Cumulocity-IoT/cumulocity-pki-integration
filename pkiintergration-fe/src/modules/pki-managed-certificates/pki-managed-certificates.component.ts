@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { FetchClient } from '@c8y/client';
 import { CreateCertificateComponent } from './create-certificate/create-certificate.component';
+import { AlertService } from '@c8y/ngx-components';
+import { CreateCertificateService } from '@services/create-certificate.service';
 @Component({
   selector: 'app-pki-managed-certificates',
   templateUrl: './pki-managed-certificates.component.html'
@@ -9,12 +11,14 @@ import { CreateCertificateComponent } from './create-certificate/create-certific
 export class PkiManagedCertificatesComponent {
   data: any;
 
-  constructor(private fetchClient: FetchClient, private modalService: BsModalService) {}
+  constructor(
+    private fetchClient: FetchClient, 
+    private modalService: BsModalService,
+    private alertService: AlertService,
+    private certificateService: CreateCertificateService,
+    ) {}
 
-  async ngOnInit() {
-    const response = await this.fetchClient.fetch('/certificates');
-    this.data = await response.json();
-  }
+ 
 
   createCertificate() {
     this.modalService.show(CreateCertificateComponent, {

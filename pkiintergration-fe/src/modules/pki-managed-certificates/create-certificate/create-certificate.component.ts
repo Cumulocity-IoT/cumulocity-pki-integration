@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { Component } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 @Component({
   selector: 'app-create-certificate',
   templateUrl: './create-certificate.component.html'
