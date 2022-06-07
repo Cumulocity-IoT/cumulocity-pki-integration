@@ -18,8 +18,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RequiredArgsConstructor
 public class HttpRestRequestService {
-	
-	private static final String nexusBaseUrl = "https://pgw.38.qa.go.nexusgroup.com/api";
+
+	// TODO: Move to tenant options
+	private static final String NEXUS_BASE_URL = "https://pgw.38.qa.go.nexusgroup.com/api";
 	private final RestTemplate restTemplate;
 
 	private HttpEntity<Object> getHttpEntity(final Object requestBody) {
@@ -38,7 +39,7 @@ public class HttpRestRequestService {
 
 		ResponseEntity<T> response;
 		try {
-			response = restTemplate.exchange(nexusBaseUrl + path, requestMethod, entity, responseType);
+			response = restTemplate.exchange(NEXUS_BASE_URL + path, requestMethod, entity, responseType);
 		} catch (final HttpStatusCodeException e) {
 			log.error(e.getMessage());
 			throw e;
@@ -52,7 +53,7 @@ public class HttpRestRequestService {
 		final HttpEntity<Object> entity = getHttpEntity(requestBody);
 		ResponseEntity<T> response;
 		try {
-			response = restTemplate.exchange(nexusBaseUrl + path, requestMethod, entity, responseType);
+			response = restTemplate.exchange(NEXUS_BASE_URL + path, requestMethod, entity, responseType);
 			return evaluateResponse(response);
 		} catch (final HttpStatusCodeException e) {
 			log.error(e.getMessage());
