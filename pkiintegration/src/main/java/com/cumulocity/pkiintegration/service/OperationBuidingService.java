@@ -6,12 +6,13 @@ import com.cumulocity.model.idtype.GId;
 import com.cumulocity.rest.representation.operation.OperationRepresentation;
 
 @Service
-public class OperationCreationService {
+public class OperationBuidingService {
 	
-		public static OperationRepresentation createKeyPairCreationOpeation(final GId deviceId)	{
+		public static OperationRepresentation createKeyPairCreationOpeation(final String deviceId)	{
 			OperationRepresentation operationRepresentation = new OperationRepresentation();
 			operationRepresentation.set("text to be added", "c8y_Command");
-			operationRepresentation.setDeviceId(deviceId);
+			GId deviceIdAsGId = new GId(deviceId);
+			operationRepresentation.setDeviceId(deviceIdAsGId);
 			return operationRepresentation;
 		}
 

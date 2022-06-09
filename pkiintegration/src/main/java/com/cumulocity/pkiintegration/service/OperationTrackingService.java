@@ -2,7 +2,6 @@ package com.cumulocity.pkiintegration.service;
 
 import org.springframework.stereotype.Service;
 
-import com.cumulocity.model.idtype.GId;
 import com.cumulocity.rest.representation.operation.OperationRepresentation;
 import com.cumulocity.sdk.client.SDKException;
 import com.cumulocity.sdk.client.devicecontrol.DeviceControlApi;
@@ -17,15 +16,12 @@ public class OperationTrackingService {
 
 	private final DeviceControlApi deviceControl;
 	
-	public void createOperation(final GId deviceId)	{
+	public void createOperation(final OperationRepresentation operationRepresentation)	{
 		
-		final OperationRepresentation operation = new OperationRepresentation();
-		operation.setDeviceId(deviceId);
-		OperationRepresentation opCreateResponse = null;
 		try {
-			opCreateResponse = deviceControl.create(operation);
+			OperationRepresentation opCreateResponse = deviceControl.create(operationRepresentation);
 		} catch (final SDKException e) {
-			log.error("Error occured while creating  operation for device " + deviceId + ".", e);
+			log.error("Error occured while creating  operation for device " + operationRepresentation.getDeviceId().getValue() + ".", e);
 		}		
 	}
 }
