@@ -15,10 +15,9 @@
       "@models/*": ["src/models/*"],
       "@services/*": ["src/services/*"],
       "@modules/*": ["src/modules/*"],
-      "@constants/*": ["src/constants/*"],
-      
+      "@constants/*": ["src/constants/*"]
     },
-  
+
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,

@@ -6,12 +6,12 @@ import { FetchClient } from '@c8y/client';
 })
 export class CreateCertificateService {
   private options = {
-    method: 'GET',
+    method: 'POST',
     headers: { 'Content-Type': 'application/json' }
   };
 
   constructor(private fetchClient: FetchClient) {}
-  async getCertificate() {
+  async uploadCertificate() {
     //Dummy service, there are not available from Backend
     const response = await this.fetchClient.fetch('service/certificates', this.options);
     if (response.status !== 200) {

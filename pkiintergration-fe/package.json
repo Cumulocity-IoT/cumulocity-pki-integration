@@ -9,7 +9,9 @@
     "deploy": "c8ycli deploy",
     "locale-extract": "c8ycli locale-extract",
     "postinstall": "ngcc",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext js,ts,json --quiet",
+    "lint:fix": "eslint . --ext js,ts,json --quiet --fix"
   },
   "keywords": [],
   "author": "",

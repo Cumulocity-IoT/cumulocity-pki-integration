@@ -11,7 +11,7 @@ export class NavigationFactory implements NavigatorNodeFactory {
       path: '/managed-certificates',
       priority: 98,
       parent: 'Management'
-    })
+    });
   }
 
   get() {

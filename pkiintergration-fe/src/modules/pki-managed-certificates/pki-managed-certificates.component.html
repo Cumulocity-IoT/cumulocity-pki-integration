@@ -1,13 +1,8 @@
 <c8y-title translate>Managed Certificates - PKI</c8y-title>
 
 <c8y-action-bar-item itemClass="navbar-form" placement="right">
-  <div class="dropdown" dropdown >
-    <button
-      type="button"
-      title="dropdown-toggle"
-      dropdownToggle
-      class="btn btn-default dropdown-toggle c8y-dropdown"
-    >
+  <div class="dropdown" dropdown>
+    <button type="button" title="dropdown-toggle" dropdownToggle class="btn btn-default dropdown-toggle c8y-dropdown">
       <span>Add Certificate</span> <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" *dropdownMenu>
@@ -19,11 +14,10 @@
       </li>
       <li>
         <button type="button" (click)="createCertificate()">
-          <i c8yIcon="trash" class="dlt-c8y-icon-trash" ></i>
-          With a connected Device
+          <i c8yIcon="upload" class="dlt-c8y-icon-upload"></i>
+          with a connected Device
         </button>
       </li>
-      
     </ul>
   </div>
 </c8y-action-bar-item>

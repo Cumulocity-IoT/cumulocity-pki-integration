@@ -7,5 +7,24 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
 export class CreateCertificateComponent {
   constructor(public bsModalRef: BsModalRef) {}
 
-  ngOnInit() {}
+  file: File | null = null;
+  onFileInput(files: FileList | null): void {
+    if (files) {
+      this.file = files.item(0);
+    }
+  }
+  //   checkFile() {
+  //     var fileElement = document.getElementById("uploadFile");
+  //     var fileExtension = "";
+  //     if (fileElement.value.lastIndexOf(".") > 0) {
+  //         fileExtension = fileElement.value.substring(fileElement.value.lastIndexOf(".") + 1, fileElement.value.length);
+  //     }
+  //     if (fileExtension.toLowerCase() == "pub") {
+  //         return true;
+  //     }
+  //     else {
+  //         alert("You must select a PUB file for upload");
+  //         return false;
+  //     }
+  // }
 }

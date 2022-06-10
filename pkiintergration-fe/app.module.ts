@@ -6,9 +6,7 @@ import { CoreModule, RouterModule } from '@c8y/ngx-components';
 import { AssetsNavigatorModule } from '@c8y/ngx-components/assets-navigator';
 import { BinaryFileDownloadModule } from '@c8y/ngx-components/binary-file-download';
 import { ChildDevicesModule } from '@c8y/ngx-components/child-devices';
-import {
-  DeviceInfoDashboardModule, DeviceManagementHomeDashboardModule
-} from '@c8y/ngx-components/context-dashboard';
+import { DeviceInfoDashboardModule, DeviceManagementHomeDashboardModule } from '@c8y/ngx-components/context-dashboard';
 import { DeviceGridExampleModule } from '@c8y/ngx-components/device-grid-example';
 import { DeviceProfileModule } from '@c8y/ngx-components/device-profile';
 import { DiagnosticsModule } from '@c8y/ngx-components/diagnostics';
@@ -20,12 +18,7 @@ import { RepositoryModule } from '@c8y/ngx-components/repository';
 import { SearchModule } from '@c8y/ngx-components/search';
 import { SubAssetsModule } from '@c8y/ngx-components/sub-assets';
 import { TrustedCertificatesModule } from '@c8y/ngx-components/trusted-certificates';
-import {
-  DashboardUpgradeModule,
-  HybridAppModule,
-  UpgradeModule,
-  UPGRADE_ROUTES
-} from '@c8y/ngx-components/upgrade';
+import { DashboardUpgradeModule, HybridAppModule, UpgradeModule, UPGRADE_ROUTES } from '@c8y/ngx-components/upgrade';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { PkiManagedCertificatesComponent } from './src/modules/pki-managed-certificates/pki-managed-certificates.component';
 import { PkiManagedCertificatesModule } from './src/modules/pki-managed-certificates/pki-managed-certificates.module';
@@ -58,15 +51,12 @@ import { PkiManagedCertificatesModule } from './src/modules/pki-managed-certific
     DeviceManagementHomeDashboardModule,
     DeviceInfoDashboardModule,
     DiagnosticsModule,
-    PkiManagedCertificatesModule,
- 
+    PkiManagedCertificatesModule
   ],
-  declarations: [
-    
-  ],
+  declarations: [],
   entryComponents: [PkiManagedCertificatesComponent],
-  
-  providers: [BsModalRef],
+
+  providers: [BsModalRef]
   // bootstrap: [BootstrapComponent],
 })
 export class AppModule extends HybridAppModule {
