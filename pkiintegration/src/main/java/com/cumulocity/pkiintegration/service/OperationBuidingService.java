@@ -8,7 +8,7 @@ import com.cumulocity.rest.representation.operation.OperationRepresentation;
 @Service
 public class OperationBuidingService {
 	
-		public static OperationRepresentation createKeyPairCreationOpeation(final String deviceId)	{
+		public static OperationRepresentation buildKeyPairCreationOpeation(final String deviceId)	{
 			OperationRepresentation operationRepresentation = new OperationRepresentation();
 			operationRepresentation.set("text to be added", "c8y_Command");
 			GId deviceIdAsGId = new GId(deviceId);

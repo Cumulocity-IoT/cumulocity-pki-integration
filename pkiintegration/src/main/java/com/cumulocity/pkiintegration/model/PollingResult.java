@@ -8,6 +8,6 @@ import lombok.RequiredArgsConstructor;
 @Data
 @RequiredArgsConstructor
 public class PollingResult {
-	private final String result;
+	private final String operationStatus;
 	private final boolean successful;
 }

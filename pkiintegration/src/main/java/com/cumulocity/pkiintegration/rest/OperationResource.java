@@ -26,7 +26,7 @@ public class OperationResource {
 	
 	@PostMapping("/createkeys")
 	public ResponseEntity<?> createKeys(@RequestBody @NotBlank String deviceId) {
-		OperationRepresentation operation = OperationBuidingService.createKeyPairCreationOpeation(deviceId);
+		OperationRepresentation operation = OperationBuidingService.buildKeyPairCreationOpeation(deviceId);
 		operationTrackingService.createOperation(operation);
 		return ResponseEntity.status(HttpStatus.OK).body(null);
 	}
