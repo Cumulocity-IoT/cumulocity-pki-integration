@@ -24,4 +24,9 @@ public class CertificateController {
 	public ResponseEntity<?> getCertificateRegsitrations() throws RestClientException, URISyntaxException {
 		return ResponseEntity.status(HttpStatus.OK).body(certificateManagementService.getRegistrations());
 	}
+	
+	@GetMapping("/simpleenroll")
+	public ResponseEntity<?> simpleEnroll() throws RestClientException, URISyntaxException {
+		return ResponseEntity.status(HttpStatus.OK).body(certificateManagementService.simpleEnrollRequest());
+	}
 }

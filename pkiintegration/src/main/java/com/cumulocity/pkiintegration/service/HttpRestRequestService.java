@@ -20,12 +20,14 @@ import lombok.extern.slf4j.Slf4j;
 public class HttpRestRequestService {
 
 	// TODO: Move to tenant options
-	private static final String NEXUS_BASE_URL = "https://pgw.38.qa.go.nexusgroup.com/api";
+	//private static final String NEXUS_BASE_URL = "https://pgw.38.qa.go.nexusgroup.com/api";
+	private static final String NEXUS_BASE_URL = "https://pgw.38.qa.go.nexusgroup.com:8443/est/sag_te_di1_dc1_2";
 	private final RestTemplate restTemplate;
 
 	private HttpEntity<Object> getHttpEntity(final Object requestBody) {
 		final HttpHeaders headers = new HttpHeaders();
-
+		headers.add("Content-Type", "application/pkcs10");
+		
 		if (requestBody != null) {
 			return new HttpEntity<>(requestBody, headers);
 		} else {
