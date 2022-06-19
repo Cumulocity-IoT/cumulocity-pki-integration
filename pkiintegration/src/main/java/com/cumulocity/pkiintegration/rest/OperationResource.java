@@ -1,14 +1,18 @@
 package com.cumulocity.pkiintegration.rest;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cumulocity.model.idtype.GId;
 import com.cumulocity.pkiintegration.service.OperationBuidingService;
 import com.cumulocity.pkiintegration.service.OperationTrackingService;
 import com.cumulocity.rest.representation.operation.OperationRepresentation;
@@ -30,5 +34,11 @@ public class OperationResource {
 		operationTrackingService.createOperation(operation);
 		return ResponseEntity.status(HttpStatus.OK).body(null);
 	}
+	
+	@PostMapping("/getOperationStatus/{operationId}")
+	public ResponseEntity<String> getOperationStatus(@Valid @PathVariable @NotNull final GId operationId) {
+		String operationStatusResult = operationTrackingService.traceOperation(operationId);
+		return ResponseEntity.status(HttpStatus.OK).body(operationStatusResult);
+	}	
 	
 }
