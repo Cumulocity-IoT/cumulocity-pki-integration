@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cumulocity.model.idtype.GId;
+import com.cumulocity.model.operation.OperationStatus;
 import com.cumulocity.pkiintegration.service.OperationBuidingService;
 import com.cumulocity.pkiintegration.service.OperationTrackingService;
 import com.cumulocity.rest.representation.operation.OperationRepresentation;
@@ -40,6 +41,15 @@ public class OperationResource {
 	public ResponseEntity<String> getOperationStatus(@Valid @PathVariable @NotNull final GId operationId) {
 		String operationStatusResult = operationTrackingService.traceOperation(operationId);
 		return ResponseEntity.status(HttpStatus.OK).body(operationStatusResult);
+	}
+	
+	@GetMapping("/createOperationForDevice/{deviceId}")
+	public ResponseEntity<OperationRepresentation> createOperationForDevice(@Valid @PathVariable @NotNull final GId deviceId) {
+		OperationRepresentation operationRepresentation = new OperationRepresentation();
+		operationRepresentation.setDeviceId(deviceId);
+		operationRepresentation.setStatus(OperationStatus.SUCCESSFUL.toString());
+		operationRepresentation.setProperty("result", "device_id");
+		return ResponseEntity.status(HttpStatus.OK).body(operationRepresentation);
 	}	
 	
 }
