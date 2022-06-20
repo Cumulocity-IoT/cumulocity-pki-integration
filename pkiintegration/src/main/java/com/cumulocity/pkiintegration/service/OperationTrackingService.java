@@ -38,23 +38,26 @@ public class OperationTrackingService {
 	public String traceOperation(final GId operationId)	{
 		String tenant = subscriptions.getTenant();
 		java.util.List<String> resultOfTheCheck = new ArrayList();
-		subscriptions.runForTenant(tenant, () -> {
 		
-			final Callable<PollingResult> checkForFinalOperationStatus = () -> {
+		final Callable<PollingResult> checkForFinalOperationStatus = () -> {
+			return subscriptions.callForTenant(tenant, () -> {
 				OperationRepresentation currentOperationRepresentation = deviceControl.getOperation(operationId);
 				String currentOperationStatus = currentOperationRepresentation.getStatus();
-				if (currentOperationRepresentation.getStatus().equalsIgnoreCase(OperationStatus.FAILED.toString()) || currentOperationRepresentation.getStatus().equalsIgnoreCase(OperationStatus.SUCCESSFUL.toString()))	{
+				if (currentOperationRepresentation.getStatus().equalsIgnoreCase(OperationStatus.FAILED.toString())
+						|| currentOperationRepresentation.getStatus()
+								.equalsIgnoreCase(OperationStatus.SUCCESSFUL.toString())) {
 					return new PollingResult(currentOperationStatus, true);
-				} else	{
+				} else {
 					return new PollingResult(null, false);
 				}
-			};	
+			});
+		};
 			log.debug("Start polling for final status of operation with id[{}] of file to AC=[{}] fileName=[{}] version=[{}]", operationId.getValue());
 			final PollingResult pollingResult = pollingService.poll(checkForFinalOperationStatus, "OperationStatus#" + operationId.getValue(),
 					Duration.ofSeconds(10),
 					Duration.ofSeconds(5));
 			resultOfTheCheck.add(pollingResult.getOperationStatus()) ;
-		});
+		
 		return resultOfTheCheck.get(0);
 		
 	}
