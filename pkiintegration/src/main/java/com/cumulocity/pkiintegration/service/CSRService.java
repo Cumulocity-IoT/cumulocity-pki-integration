@@ -32,9 +32,10 @@ public class CSRService {
 			keyGen.initialize(2048);
 			KeyPair keypair = keyGen.genKeyPair();
 
-			//X500Principal subject = new X500Principal("CN=local.zedwood.com, O=zedwood, OU=org, L=Orem, ST=Utah, C=US");
+			// X500Principal subject = new X500Principal("CN=local.zedwood.com, O=zedwood,
+			// OU=org, L=Orem, ST=Utah, C=US");
 			X500Principal subject = new X500Principal("CN=Requested Test Certificate");
-			
+
 			PKCS10CertificationRequestBuilder p10Builder = new JcaPKCS10CertificationRequestBuilder(subject,
 					keypair.getPublic());
 			JcaContentSignerBuilder csBuilder = new JcaContentSignerBuilder("SHA256withRSA");
@@ -42,7 +43,6 @@ public class CSRService {
 			try {
 				signer = csBuilder.build(keypair.getPrivate());
 				PKCS10CertificationRequest csr = p10Builder.build(signer);
-				System.out.println(csr.getEncoded().toString());
 				try {
 					PemObject pemObject = new PemObject("CERTIFICATE REQUEST", csr.getEncoded());
 					Writer csrStringWriter = new StringWriter();
@@ -59,9 +59,6 @@ public class CSRService {
 			} catch (OperatorCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
 			}
 
 		} catch (NoSuchAlgorithmException e) {
