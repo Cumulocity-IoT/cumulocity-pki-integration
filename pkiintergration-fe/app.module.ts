@@ -20,8 +20,9 @@ import { SubAssetsModule } from '@c8y/ngx-components/sub-assets';
 import { TrustedCertificatesModule } from '@c8y/ngx-components/trusted-certificates';
 import { DashboardUpgradeModule, HybridAppModule, UpgradeModule, UPGRADE_ROUTES } from '@c8y/ngx-components/upgrade';
 import { BsModalRef } from 'ngx-bootstrap/modal';
-import { PkiManagedCertificatesComponent } from './src/modules/pki-managed-certificates/pki-managed-certificates.component';
-import { PkiManagedCertificatesModule } from './src/modules/pki-managed-certificates/pki-managed-certificates.module';
+import { HooksModule } from './src/hooks/hooks.module';
+// import { PkiManagedCertificatesComponent } from './src/modules/pki-managed-certificates/pki-managed-certificates.component';
+import { PkiManagedCertificatesModule } from '@modules/pki-managed-certificates/pki-managed-certificates.module';
 
 @NgModule({
   imports: [
@@ -51,10 +52,11 @@ import { PkiManagedCertificatesModule } from './src/modules/pki-managed-certific
     DeviceManagementHomeDashboardModule,
     DeviceInfoDashboardModule,
     DiagnosticsModule,
-    PkiManagedCertificatesModule
+    PkiManagedCertificatesModule,
+    HooksModule
   ],
   declarations: [],
-  entryComponents: [PkiManagedCertificatesComponent],
+  entryComponents: [],
 
   providers: [BsModalRef]
   // bootstrap: [BootstrapComponent],

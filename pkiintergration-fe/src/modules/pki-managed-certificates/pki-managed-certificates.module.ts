@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule as NgRouterModule, Routes } from '@angular/router';
 import { CoreModule, HOOK_NAVIGATOR_NODES, RouterModule } from '@c8y/ngx-components';
-import { CreateCertificateComponent } from './create-certificate/create-certificate.component';
-import { NavigationFactory } from '../../../hooks/navi.factory';
-import { PkiManagedCertificatesComponent } from './pki-managed-certificates.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { NavigationFactory } from '../../hooks/navi.factory';
+import { CreateCertificateComponent } from './create-certificate/create-certificate.component';
+import { PkiManagedCertificatesComponent } from './pki-managed-certificates.component';
 
 const moduleRoutes: Routes = [{ path: 'managed-certificates', component: PkiManagedCertificatesComponent }];
 

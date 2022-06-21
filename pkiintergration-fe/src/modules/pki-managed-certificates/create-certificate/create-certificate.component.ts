@@ -13,6 +13,8 @@ export class CreateCertificateComponent {
       this.file = files.item(0);
     }
   }
+
+  // This part should be continued to implement in the future
   //   checkFile() {
   //     var fileElement = document.getElementById("uploadFile");
   //     var fileExtension = "";
