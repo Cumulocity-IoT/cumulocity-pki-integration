@@ -55,7 +55,7 @@ public class OperationTrackingService {
 			log.debug("Start polling for final status of operation with id[{}] of file to AC=[{}] fileName=[{}] version=[{}]", operationId.getValue());
 			final PollingResult pollingResult = pollingService.poll(checkForFinalOperationStatus, "OperationStatus#" + operationId.getValue(),
 					Duration.ofSeconds(10),
-					Duration.ofSeconds(5));
+					Duration.ofMinutes(5));
 			resultOfTheCheck.add(pollingResult.getOperationStatus()) ;
 		
 		return resultOfTheCheck.get(0);
