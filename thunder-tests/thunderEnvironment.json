@@ -6,7 +6,7 @@
     "global": true,
     "sortNum": -1,
     "created": "2022-06-02T05:26:58.605Z",
-    "modified": "2022-06-02T06:07:12.912Z",
+    "modified": "2022-06-22T07:39:59.058Z",
     "data": [
       {
         "name": "baseUrl2",
@@ -15,6 +15,14 @@
       {
         "name": "baseUrl",
         "value": "https://pki-integration.eu-latest.cumulocity.com"
+      },
+      {
+        "name": "tenantId_ps",
+        "value": "t10452223"
+      },
+      {
+        "name": "tenantId",
+        "value": "t1072830126"
       }
     ]
   },
