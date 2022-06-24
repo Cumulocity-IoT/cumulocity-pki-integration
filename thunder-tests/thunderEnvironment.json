@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "c5980eb1-dfcf-434d-9854-45dd7ad2590b",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -1,
+    "created": "2022-06-02T05:26:58.605Z",
+    "modified": "2022-06-22T07:39:59.058Z",
+    "data": [
+      {
+        "name": "baseUrl2",
+        "value": "https://psfactory.eu-latest.cumulocity.com"
+      },
+      {
+        "name": "baseUrl",
+        "value": "https://pki-integration.eu-latest.cumulocity.com"
+      },
+      {
+        "name": "tenantId_ps",
+        "value": "t10452223"
+      },
+      {
+        "name": "tenantId",
+        "value": "t1072830126"
+      }
+    ]
+  },
+  {
+    "_id": "51bf558b-faa7-4881-8c9c-60750cfea233",
+    "name": "(Local Env)",
+    "default": false,
+    "global": true,
+    "local": true,
+    "sortNum": -2,
+    "created": "2022-06-02T05:30:01.282Z",
+    "modified": "2022-06-02T05:30:01.282Z",
+    "data": []
+  }
+]
