@@ -16,9 +16,8 @@ The administrator uploads the provided CA to the cumulocity tenant.
 #### Alternative Path
 The upload of the certificate is not possible of a certificate already exists
 #### Amount of involved devices
-- [ ] one
-- [ ] multiple
-
+- [ ] ~~one~~
+- [ ] ~~multiple~~
 
 ## UC 1: Device Registration with existing certificate
 #### Description
@@ -39,8 +38,8 @@ The user uploads the device certificate provided by the CA to the tenant.
 #### Alternative Path
 none
 #### Amount of involved devices
-- [ ] ~~one~~
-- [ ] ~~multiple~~
+- [x] one
+- [x] multiple
 
 ## UC 2: Basic authentification replaced by certificates
 #### Description
