@@ -15,7 +15,9 @@ none
 The administrator uploads the provided CA to the cumulocity tenant.
 #### Alternative Path
 The upload of the certificate is not possible of a certificate already exists
-
+#### Amount of involved devices
+- [ ] one
+- [ ] multiple
 
 
 ## UC 1: Device Registration with existing certificate
@@ -36,6 +38,9 @@ The user uploads the device certificate provided by the CA to the tenant.
 
 #### Alternative Path
 none
+#### Amount of involved devices
+- [ ] ~~one~~
+- [ ] ~~multiple~~
 
 ## UC 2: Basic authentification replaced by certificates
 #### Description
@@ -59,6 +64,9 @@ The process starts by sending an operation (c8y_replaceAuthentication)to the dev
 
 #### Alternative Path
 none
+#### Amount of involved devices
+- [x] one
+- [ ] ~~multiple~~
 
 ## UC 3: Certificate Create
 #### Description
@@ -80,6 +88,9 @@ The process starts by hitting a button and the amout of certificates are created
 
 #### Alternative Path
 none
+#### Amount of involved devices
+- [x] one
+- [ ] ~~multiple~~
 
 ## UC 4: Certificate Renewal
 #### Description
@@ -101,12 +112,16 @@ The cumulocity user which has the permissions to manage devices and access to th
 * A button to renew a certificate
 * a particular date with a particular time
 
+
 #### Basic Flow
 
 The system send a request to the PKI provider to renew an existing certificate.  The PKI provider generates a certificate which is send and stored to cumulocity. The microservice create an operation (c8y_sendCertificate) to the device. The device than replaces the old certificate with the new one with the certificate.
 
 #### Alternative Path
 none
+#### Amount of involved devices
+- [x] one
+- [x] multiple
 
 
 ## UC 5: Certificate Revokation
@@ -130,6 +145,9 @@ The process revokes a certificate within Cumulocity and within the PKI provider
 
 #### Alternative Path
 none
+#### Amount of involved devices
+- [x] one
+- [x] multiple
 
 ## UC 6: Certificate Status
 #### Description
@@ -152,11 +170,13 @@ Ths system request the status of a certificate from the PKI Provider
 
 #### Alternative Path
 none
-
+#### Amount of involved devices
+- [x] one
+- [x] multiple
 
 ## UC 7: Certificate Replacement
 #### Description
-This use case si the replace an existing device certificate with a new one to for example move a device from one cumulocity tenant to another tenant.
+This use case is to replace an existing device certificate with a new one to for example move a device from one cumulocity tenant to another tenant.
 
 #### Actor
 The cumulocity user which has the permissions to manage devices and access to the device management app.
@@ -171,52 +191,93 @@ The cumulocity user which has the permissions to manage devices and access to th
 * A button to replace a device certificate from an Enterprise Tenant
 
 #### Basic Flow
-The basic flow, or main success scenario, is a use case that works perfectly and as fully intended, with no exceptions or errors in the run. They often serve as a foundation to create alternative options. Understanding how a normal scenario works can help you implement correct code or find alternative flows.
+
+Ther system requests a new certificates for a device. A Possible new TenantId is included as well
+
 #### Alternative Path
-An alternative path, or alternative flow, is a variation of the main success scenario. It typically shows when an error happens at the system level. You often include the most likely or most significant alternatives an actor might make an exception for in this portion of the use case. 
-This is a short Use Case to make sure 
+
+needs to be defined
+
+#### Amount of involved devices
+- [x] one
+- [x] multiple
+
 ## UC 8: Certificate Reinstate
 #### Description
+
+This use case is to reinstate formerly revoked certificates
+
 #### Actor
-An actor is someone or something who performs a behavior. It can be a person or an object who uses the system.
+The cumulocity user which has the permissions to manage devices and access to the device management app.
 
 
 #### Preconditions
-Preconditions are statements, or truths, about what must take place before and after the use case. Software developers often know the steps that must take place for the next action to occur.
+
+* The device is offline and it's certificate is revoked
+
 #### Triggers
-Triggers are events that cause software developers to start a use case study or report. Triggers can be for internal or external reasons, like a customer experiencing a problem or a leader requesting research before a product launch. Using the e-commerce example, the company might consider implementing a completely redesigned checkout process, and it wants to establish the proper flow and prepare for certain circumstances or events a user might encounter.
+
+* A button to revoke a device certificate from a tenant
+
 #### Basic Flow
-The basic flow, or main success scenario, is a use case that works perfectly and as fully intended, with no exceptions or errors in the run. They often serve as a foundation to create alternative options. Understanding how a normal scenario works can help you implement correct code or find alternative flows.
+
+The system sends a reinstate request to the PKI-Provider to reinstate a device certificate 
+
 #### Alternative Path
-An alternative path, or alternative flow, is a variation of the main success scenario. It typically shows when an error happens at the system level. You often include the most likely or most significant alternatives an actor might make an exception for in this portion of the use case. 
-This is a short Use Case to make sure 
+
+none
+#### Amount of involved devices
+- [x] one
+- [x] multiple
+
 ## UC 9: Certificate Deletion
 #### Description
-#### Actor
-An actor is someone or something who performs a behavior. It can be a person or an object who uses the system.
 
+This use case is to delete an existing certificate.
+
+#### Actor
+
+The cumulocity user which has the permissions to manage devices and access to the device management app.
 
 #### Preconditions
-Preconditions are statements, or truths, about what must take place before and after the use case. Software developers often know the steps that must take place for the next action to occur.
+none
+
 #### Triggers
-Triggers are events that cause software developers to start a use case study or report. Triggers can be for internal or external reasons, like a customer experiencing a problem or a leader requesting research before a product launch. Using the e-commerce example, the company might consider implementing a completely redesigned checkout process, and it wants to establish the proper flow and prepare for certain circumstances or events a user might encounter.
+
+* A button to delete a device certificate from a tenant
+
 #### Basic Flow
-The basic flow, or main success scenario, is a use case that works perfectly and as fully intended, with no exceptions or errors in the run. They often serve as a foundation to create alternative options. Understanding how a normal scenario works can help you implement correct code or find alternative flows.
+
+The user presses a button and have to accept a second time the deletion and then the certificate is deleted.
+
 #### Alternative Path
-An alternative path, or alternative flow, is a variation of the main success scenario. It typically shows when an error happens at the system level. You often include the most likely or most significant alternatives an actor might make an exception for in this portion of the use case. 
-This is a short Use Case to make sure 
+none
+#### Amount of involved devices
+- [x] one
+- [x] multiple
 ## UC 10: Certificate Distribution via Gateway
 #### Description
-#### Actor
-An actor is someone or something who performs a behavior. It can be a person or an object who uses the system.
 
+This use is to distribute a device certificate to child devices which are attached to a Gateway
+
+#### Actor
+The cumulocity user which has the permissions to manage devices and access to the device management app.
 
 #### Preconditions
-Preconditions are statements, or truths, about what must take place before and after the use case. Software developers often know the steps that must take place for the next action to occur.
+
+* The gateway is already with device certificate connected 2 Cumulocity
+* The Child devices (agents) can deal with device certificates and can switch between Basic Authentication 2 device certificates
 #### Triggers
-Triggers are events that cause software developers to start a use case study or report. Triggers can be for internal or external reasons, like a customer experiencing a problem or a leader requesting research before a product launch. Using the e-commerce example, the company might consider implementing a completely redesigned checkout process, and it wants to establish the proper flow and prepare for certain circumstances or events a user might encounter.
+
+* The user presses a button to start the process and selects one or multiple child devices.
+
 #### Basic Flow
-The basic flow, or main success scenario, is a use case that works perfectly and as fully intended, with no exceptions or errors in the run. They often serve as a foundation to create alternative options. Understanding how a normal scenario works can help you implement correct code or find alternative flows.
+
+To be discussed
+
 #### Alternative Path
-An alternative path, or alternative flow, is a variation of the main success scenario. It typically shows when an error happens at the system level. You often include the most likely or most significant alternatives an actor might make an exception for in this portion of the use case. 
-This is a short Use Case to make sure 
+
+To be discussed
+#### Amount of involved devices
+- [x] one
+- [x] multiple
