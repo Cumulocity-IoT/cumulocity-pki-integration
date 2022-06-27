@@ -1912,20 +1912,21 @@
     "colId": "04f4291d-8375-4130-8fe9-232d27df2624",
     "containerId": "eb085498-8ba3-42ef-b696-3394b5420898",
     "name": "Retrieve the username and state of a specific managed object",
-    "url": "{{baseUrl}}/inventory/managedObjects/{id}/user",
+    "url": "{{baseUrl2}}/inventory/managedObjects/159506125/user",
     "method": "GET",
     "sortNum": 930000,
     "created": "2022-06-02T05:29:43.191Z",
-    "modified": "2022-06-02T05:29:43.191Z",
+    "modified": "2022-06-27T04:55:25.786Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "basic",
       "basic": {
         "username": "{{username}}",
-        "password": "{{password}}"
+        "password": "{{password_ps}}"
       }
-    }
+    },
+    "tests": []
   },
   {
     "_id": "156e957b-90fe-47c8-91f5-3c84d6b16895",
