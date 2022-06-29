@@ -10,11 +10,16 @@ import java.security.cert.X509Certificate;
 import java.util.Base64;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.Optional;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 
+import com.cumulocity.microservice.subscription.service.MicroserviceSubscriptionsService;
+import com.cumulocity.model.idtype.GId;
+import com.cumulocity.sdk.client.identity.ExternalIDCollection;
+import com.cumulocity.sdk.client.identity.IdentityApi;
 import com.google.common.io.CharSource;
 
 import lombok.RequiredArgsConstructor;
@@ -23,29 +28,39 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CertificateManagementService {
 
+	private static final String SIMPLEENROLL = "/simpleenroll";
+	private static final String PKCS_PLACEHOLDER = "PKCS7DATA";
+	private static final String PKCS7_HEADER = "-----BEGIN PKCS7-----\n" + PKCS_PLACEHOLDER + "\n-----END PKCS7-----";
 	private final HttpRestRequestService request;
 	private final CSRService csrService;
+	private final IdentityApi identity;
+	private final MicroserviceSubscriptionsService subscriptionService;
 
-	public Object getRegistrations() throws RestClientException, URISyntaxException {
-		String endpoint = "/registrations/t4793186911343297060/est";
-		Object response = request.sendRequest(HttpMethod.GET, endpoint, Object.class);
-		return response;
+	public Object simpleEnrollRequest(String deviceId) throws Exception {
+		String tenantId = subscriptionService.getTenant();
+		String deviceExternalId = getDeviceExternalId(deviceId);
+		Optional<String> csrBody = csrService.GenerateCSR(deviceExternalId, tenantId);
+
+		if (!csrBody.isEmpty()) {
+			// String csrBody = csrService.GenerateCSR(deviceId);
+			String response = request.sendRequest(HttpMethod.POST, SIMPLEENROLL, csrBody.get(), String.class);
+			return extractCertificate(response);
+		} else {
+			// TODO: create meaningful custom exception
+			throw new Exception("Unable to generate PKCS10 CSR Body, check logs for error details");
+		}
 	}
 
-	public Object simpleEnrollRequest() throws Exception {
-		String csrBody = csrService.GenerateCSR();
-		String endpoint = "/simpleenroll";
-		String response = request.sendRequest(HttpMethod.POST, endpoint, csrBody, String.class);
-		
-		return extractCertificate(response);
+	private String getDeviceExternalId(String deviceId) {
+		ExternalIDCollection externalIdRepresentaton = identity.getExternalIdsOfGlobalId(new GId(deviceId));
+		String deviceExternalId = externalIdRepresentaton.get(0).getExternalIds().get(0).getExternalId();
+		return deviceExternalId;
 	}
 
 	private String extractCertificate(String pkcsSevenData) throws Exception {
-		pkcsSevenData = "-----BEGIN PKCS7-----\n" + pkcsSevenData + "\n-----END PKCS7-----";
-
+		pkcsSevenData = PKCS7_HEADER.replace(PKCS_PLACEHOLDER, pkcsSevenData);
 		String certificateString = "";
 		InputStream is = CharSource.wrap(pkcsSevenData).asByteSource(StandardCharsets.UTF_8).openStream();
-
 		CertificateFactory cf = CertificateFactory.getInstance("X.509");
 
 		Collection<? extends Certificate> c = cf.generateCertificates(is);
@@ -75,11 +90,19 @@ public class CertificateManagementService {
 		sb.append("\t\tNot After: " + cert.getNotAfter() + "\r\n");
 		sb.append("\r\n");
 		sb.append("-----BEGIN CERTIFICATE-----\n");
-		sb.append(Base64.getMimeEncoder().encodeToString(cert.getEncoded()));
+		sb.append(Base64.getEncoder().encodeToString(cert.getEncoded()));
 		sb.append("\n-----END CERTIFICATE-----");
 
 		// TODO: Print other attributes, do some research to get them all...
 
 		return sb.toString();
 	}
+	
+	// TODO: Remove this method if not required
+	public Object getRegistrations() throws RestClientException, URISyntaxException {
+		String endpoint = "/registrations/t4793186911343297060/est";
+		Object response = request.sendRequest(HttpMethod.GET, endpoint, Object.class);
+		return response;
+	}
+
 }
