@@ -29,6 +29,7 @@ import lombok.RequiredArgsConstructor;
 public class CertificateManagementService {
 
 	private static final String SIMPLEENROLL = "/simpleenroll";
+	private static final String CACERTS = "/cacerts";
 	private static final String PKCS_PLACEHOLDER = "PKCS7DATA";
 	private static final String PKCS7_HEADER = "-----BEGIN PKCS7-----\n" + PKCS_PLACEHOLDER + "\n-----END PKCS7-----";
 	private final HttpRestRequestService request;
@@ -49,6 +50,11 @@ public class CertificateManagementService {
 			// TODO: create meaningful custom exception
 			throw new Exception("Unable to generate PKCS10 CSR Body, check logs for error details");
 		}
+	}
+	
+	public String getCacerts() {
+		String response = request.sendRequest(HttpMethod.GET, CACERTS, String.class);
+		return response;
 	}
 
 	private String getDeviceExternalId(String deviceId) {
@@ -104,5 +110,4 @@ public class CertificateManagementService {
 		Object response = request.sendRequest(HttpMethod.GET, endpoint, Object.class);
 		return response;
 	}
-
 }
