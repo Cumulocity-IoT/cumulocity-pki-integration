@@ -5,10 +5,11 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
   templateUrl: './create-certificate.component.html'
 })
 export class CreateCertificateComponent {
+  file: File | null = null;
+
   constructor(public bsModalRef: BsModalRef) {}
 
-  file: File | null = null;
-  onFileInput(files: FileList | null): void {
+  onFileInput(files: FileList): void {
     if (files) {
       this.file = files.item(0);
     }

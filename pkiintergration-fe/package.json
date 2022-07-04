@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "c8ycli server -u https://pki-integration.eu-latest.cumulocity.com",
+    "start:admin": "c8ycli server apps/pki-admin -u https://pki-integration.eu-latest.cumulocity.com",
+    "start:devicemanagement": "c8ycli server apps/pkiintergration-fe -u https://pki-integration.eu-latest.cumulocity.com",
     "build": "c8ycli build",
     "deploy": "c8ycli deploy",
     "locale-extract": "c8ycli locale-extract",

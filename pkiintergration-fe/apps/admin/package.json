@@ -1,0 +1,19 @@
+{
+  "name": "pki-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "c8y": {
+    "application": {
+      "name": "admin",
+      "contextPath": "pki-admin",
+      "key": "admin-application-key",
+      "upgrade": true,
+      "rightDrawer": true,
+      "tabsHorizontal": true,
+      "contentSecurityPolicy": "base-uri 'none'; default-src 'self' 'unsafe-inline' http: https: ws: wss:; connect-src 'self' http: https: ws: wss:;  script-src 'self' open.mapquestapi.com *.twitter.com *.twimg.com *.aptrinsic.com  'unsafe-inline' 'unsafe-eval' data:; style-src * 'unsafe-inline' blob:; img-src * data:; font-src * data:; frame-src *; worker-src 'self' blob:;",
+      "dynamicOptionsUrl": "/apps/public/public-options/options.json"
+    },
+    "cli": {}
+  }
+}

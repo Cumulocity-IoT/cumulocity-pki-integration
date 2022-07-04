@@ -12,11 +12,11 @@ export class CreateOperationActionFactory implements ActionBarFactory {
 
     const showButton: ActionBarItem = {
       priority: 0,
-      placement: 'right',
+      placement: 'more',
       template: CreateKeypairComponent
     };
 
-    if (this.router.url.match(/control/g)) {
+    if (this.router.url.match(/device-info/g)) {
       actions.push(showButton);
     }
 
