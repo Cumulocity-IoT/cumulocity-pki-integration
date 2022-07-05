@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "target": "es6",
+    "module": "es2020",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["dom", "es2016"],
+    "paths": {
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
+      "@modules/*": ["src/modules/*"],
+      "@constants/*": ["src/constants/*"]
+    },
+
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}

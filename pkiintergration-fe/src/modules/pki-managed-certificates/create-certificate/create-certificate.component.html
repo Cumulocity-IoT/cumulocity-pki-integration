@@ -1,0 +1,33 @@
+<div class="modal-dialog">
+  <div class="modal-content" uib-modal-transclude="">
+    <div class="modal-header text-center bg-primary">
+      <div style="font-size: 45px">
+        <span class="c8y-icon c8y-icon-white c8y-icon-connector-out"></span>
+      </div>
+      <h4 class="text-uppercase" style="margin: 0; letter-spacing: 0.15em; color: white">Generate Key Pair</h4>
+    </div>
+    <hr style="margin: 0" />
+    <div class="modal-body">
+      <form action="#">
+        <div class="form-group">
+          <label for="exampleInputFile">Public Key Upload</label>
+          <input
+            hidden
+            type="file"
+            id="exampleInputFile"
+            aria-describedby="helpinput"
+            class="form-control"
+            accept=".pub"
+            #fileInput
+            (change)="onFileInput(fileInput.files)"
+          />
+          <p id="helpinput" class="help-block">Make sure, your File Extension is .PUB</p>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-default" translate="" (click)="bsModalRef.hide()">Cancel</button>
+      <button type="submit" class="btn btn-primary" (click)="bsModalRef.hide()">Generate</button>
+    </div>
+  </div>
+</div>
