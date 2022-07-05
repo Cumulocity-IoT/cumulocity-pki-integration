@@ -1,9 +1,12 @@
 package com.cumulocity.pkiintegration;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+import com.cumulocity.microservice.autoconfigure.MicroserviceApplication;
+import com.cumulocity.microservice.context.annotation.EnableContextSupport;
+
+@EnableContextSupport
+@MicroserviceApplication
 public class PkiintegrationApplication {
 
 	public static void main(String[] args) {
